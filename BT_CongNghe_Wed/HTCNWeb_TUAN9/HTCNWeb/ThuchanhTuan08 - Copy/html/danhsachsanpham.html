@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sach san pham</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        let dssp = JSON.parse(localStorage.getItem("products"))
+
+        function display(sp) {
+            let item = "<div class='col-md-3'>" +
+                "<figure class='border'>" +
+                "<img onclick=\"return makeLager('" + sp.hinhanh + "','" + sp.tensp + "'," + sp.dongia + ")\" src='" + sp.hinhanh + "' alt='Hinh anh' class='rounded w-100' height='300'>" +
+                "<figcaption class='text-center'>" + sp.tensp + "</figcaption>" +
+                "</figure>" +
+                "</div>"
+
+            $("#myRow").append(item)
+        }
+
+        function makeLager(url, tensp, dongia) {
+            $("#idHinhanh").attr("src", url)
+            $("#idHinhanh").attr("width", 400)
+            $("#idHinhanh").attr("height", 500)
+            $("#myHeader").html(tensp)
+            $("#idTensp").html(tensp)
+            $("#idDongia").html(dongia)
+
+            $("#myModal").modal()
+        }
+
+        $(document).ready(function () {
+            dssp.forEach(sp => {
+                display(sp)
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Danh sach cac san pham</h1>
+        <div class="row" id="myRow">
+            <!-- <div class='col-md-3'>
+                <figure class='border'>
+                    <img onclick='return makeLager(sp)' src='../img/chauhoa1.PNG' alt='Hinh anh' class='rounded w-100' height='300'>
+                    <figcaption class='text-center'>Chau hoa 1</figcaption>
+                </figure>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center" id="myHeader">San pham 1</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <figure class='border'>
+                        <img src='../img/chauhoa1.PNG' alt='Hinh anh' class='rounded w-100' height='300' id="idHinhanh">
+                        <figcaption class='text-center' id="idTensp">Chau hoa 1</figcaption>
+                        <label for="">Don gia: </label><span id="idDongia">1000</span>
+                    </figure>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    border: 1px solid black;
+    color: white;
+
+}
+
+#header {
+    height: 50px;
+    position: relative;
+    background: #6fc9ec;
+    border-bottom: 5px dotted white;
+}
+
+#header .c1{
+    left: 0px;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    padding: 0px;
+}
+
+#header a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:visited {
+    color: white;
+}
+
+#header h1 {
+    font-size: 40px;
+    position: absolute;
+    text-shadow: 0px 0px 8px blue, -2px 0px 8px blue, 2px 0px 8px blue, 0px 2px 8px blue, 0px -2px 8px blue;
+    right: 20px;
+}
+
+#aside {
+    width: 45%;
+    height: 420px;
+    float: right;
+    background: #6fc9ec;
+    color: blue;
+}
+
+#aside img {
+    width: 380px;
+    height: 300px;
+    margin: 30px 15px 8px 30px;
+}
+
+#aside h1 {
+    font-size: 30px;
+    margin-left: 45px;
+    text-shadow: 2.7px 1px 1px blue;
+}
+
+#aside p {
+    font-size: 20px;
+    margin-left: 55px;
+    font-weight: bold
+}
+
+#section {
+    width: 55%;
+    float: left;
+    background: #6fc9ec;
+    height: 420px;
+}
+.form-row{
+    margin-left: 45px;
+}
+.form-row textarea, .form-row input, .form-row select{
+    border: 1.5px solid rgb(48, 48, 252);
+    border-radius: 5px;
+}
+.form-row button {
+    border: 1.5px dashed rgb(48, 48, 252);
+}
+#footer{
+    margin-top: 420px;
+    height: 60px;
+    text-align: center;
+    background-color: #6fc9ec;
+    border-top: 5px dotted white;
+}
+#footer p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.c1{
+    display: inline-block;
+}
+.c1 li{
+    display: inline-block;
+    position: relative;
+}
+.c1 a:hover{
+    background-color:rgb(48, 48, 252);
+}
+.c2{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    margin-left: -40px;
+}
+.c1 .c2 a{
+    background-color: #6fc9ec;
+}
+.c1 li:hover .c2{
+    display:inline-block;
+}
+.c2 a:hover{
+    background-color:rgb(48, 48, 252);
+}

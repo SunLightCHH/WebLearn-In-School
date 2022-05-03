@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+        <title>Bài tập 8 tuần 2</title>
+        <style>
+            h2{
+                text-align:center;
+            }
+            p{
+                font-size: 26px;
+                color: red;
+            }
+            img{
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Bài 8: Sử dụng tag &ltMAP> và thuộc tính usemap của &ltIMG>
+            Tham khảo trang Web dùng thuộc tính usemap</h2>
+        <p>Khu vực có thể nhấn được là: đồng hồ, cái bảng, bản đồ góc phải</p>
+        <img src="../Image/Lop_hoc.jpg" usemap="#Lop" width="1000px" height="667px">
+        <map name="Lop">
+            <area title="Đồng hồ treo tường" shape="circle" coords="453,165,23" alt="clock" href="https://kashiclock.com.vn/dong-ho-treo-tuong-hm-321?gclid=Cj0KCQiA8vSOBhCkARIsAGdp6RRwb7Vlzg7TzYq_GLgt9qOFj6gUWmAKNoMB9x547XWiWsmeCJypEiYaAgm2EALw_wcB">
+            <area title="Bảng đen" shape="rect" coords="317,196,589,348" alt="board" href="https://www.bangghim.com/cach-bao-quan-su-dung-bang-den.htm">
+            <area title="Bản đồ thế giới" shape="poly" coords="902,234,901,355,998,390,998,204" alt="World map" href="https://galaxylands.com.vn/ban-do-the-gioi-va-ban-do-6-chau-luc-the-gioi-phong-to/">
+        </map>
+    </body>
+</html>

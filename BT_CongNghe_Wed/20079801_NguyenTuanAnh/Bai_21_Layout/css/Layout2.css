@@ -1,0 +1,21 @@
+div{
+    margin-left:10%;
+    border: 1px solid black;
+    width: 980px;
+    height:600px;
+    background-color:rgb(168, 247, 210)
+}
+nav{
+    width: 780px;
+    border-right: 1px solid black;
+    float:left;
+    flex: 1;
+}
+section{
+    margin-left:200px;
+    border-left: 1px solid;
+    flex: 1;
+}
+header, section, nav{
+    border-bottom: 1px solid black;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Giỏ hàng</title>
+
+    <link rel="stylesheet" href="../Css/edtit.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../jquery/Register.js"></script>
+    <script src="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <style>
+        .table-bordered th,
+        .table-bordered td {
+            border: 1px solid black !important;
+        }
+        .table-bordered td:nth-child(1) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Dnet Store</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../index.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="produk.html">Produk</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#kontak">Kontak</a>
+                    </li>
+                    <li>
+                        <div style="float: right; cursor: pointer;">
+                            <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span
+                                    class="badge badge-notify my-cart-badge"></span></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section>
+            <div class="col-md-11 mx-5 mb-md-0" style="padding-bottom: 60px;">
+                <div class="card h-100 border border-dark" style="background-color: aquamarine;">
+                    <h3 class="text-center py-4">Phiếu mua hàng</h3>
+                        <table class="table table-hover table-bordered" style="background-color: white;">
+                            <tr>
+                                <td>Tên sản phẩm</td>
+
+                                <td>
+                                    <div id="TenSP"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Họ và tên</td>
+
+                                <td>
+                                    <input id="Name" type="text" class="form-control" placeholder="Họ và tên">
+                                    <span id="erroName" class="text-danger" maxlength="50">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại</td>
+
+                                <td>
+                                    <input type="text" class="form-control" id="SDT" placeholder="Nhập số điện thoại"
+                                        maxlength="11">
+                                    <span class="text-danger" id="erroSDT">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ</td>
+
+                                <td>
+                                    <input type="text" class="form-control" id="Address" placeholder="Địa chỉ">
+                                    <span class="text-danger" id="erroAddress">*</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hình thức thanh toán</td>
+
+                                <td>
+                                    <input type="radio" id="online" name="Payment" value="Credit" data-toggle="collapse"
+                                        data-target="#collapseCredit">
+                                    <label for="online">Trực tuyến</label>
+                                    <img src="../img/thanh-toan-1.jpg" alt="Credit" width="300px;">
+                                    <div class="collapse" id="collapseCredit">
+                                        <input type="text" id="NumCredit" placeholder="Nhập số thẻ">
+                                        <span class="text-danger" id="erroCredit">*</span>
+                                    </div>
+                                    <div>
+                                        <input class="p-5" checked="checked" type="radio" id="offline" name="Payment"
+                                            value="Money" data-toggle="collapse" data-target="#collapseCredit">
+                                        <label for="offline">Tiền mặt&nbsp;&nbsp;&nbsp;</label>
+                                        <img src="../img/Money.jpg" alt="Money" width="70px;" height="50px">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Yêu cầu khác</td>
+
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Không bắt buộc">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền dự kiến</td>
+
+                                <td>
+                                    <span class="total-cart"></span>₫
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mã giảm giá (nếu có)</td>
+                                <td>
+                                    <input id="codeGG" type="text" class="form-control">
+                                    <span class="text-danger" id="erroCodeGG"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Số tiền được giảm</td>
+                                <td><span id="Giam">0</span>₫</td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền phải trả</td>
+                                <td><span id="all-total-cart"></span>₫</td>
+                            </tr>
+                        </table>
+                    <a id="btnPay" class="btn btn-primary" style="margin-top:-16px">Xác nhận</a>
+                </div>
+            </div>
+            <div>
+            </div>
+        </section>
+        <div class="row">
+            <table class="table table-bordered table-hover table-striped">
+                <thead class="text-center">
+                    <tr>
+                        <th class="text-center" colspan="5">Sản phẩm đã đặt</th>
+                    </tr>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="DaDat">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../jquery/cart.js"></script>
+</body>
+
+</html>

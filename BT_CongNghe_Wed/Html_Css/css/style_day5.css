@@ -1,0 +1,64 @@
+.đầu_mục{
+    background-color:chartreuse;
+}
+.đánh_dấu_thuộc_tính{
+    background-color: rgb(240, 216, 220); color:red
+}
+body{
+    background-color: white;
+    margin-left: 50px;
+}
+p{
+    font-size:20px;
+}
+div{
+    background-color:crimson;
+    color: yellow;
+    font-size:20px
+}
+mark{
+    font-size: 20px;
+}
+table, td, th{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+hr{
+    size:5px;
+    background-color: brown;
+}
+a:link{
+    font-size:30px;
+    text-decoration: none;
+    color: blue;
+}
+a:visited{
+    font-size:30px;
+    text-decoration: none;
+    color:crimson
+}
+a:hover{
+    font-size:30px;
+    text-decoration: underline;
+    background-color: brown;
+    color:greenyellow;
+}
+a:active{
+    font-size:30px;
+    text-decoration: underline;
+    color:green;
+}
+ol, li{
+    font-size:30px;
+    margin-left: 100px;
+}
+caption{
+    font-size:30px;
+    background-color:hotpink;
+}
+tr:nth-child(odd){
+    background-color:lemonchiffon;
+}
+tr:hover{
+    background-color: lightpink;
+}

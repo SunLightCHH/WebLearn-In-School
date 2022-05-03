@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+
+<body>
+    <h1>Bài 6: Sử dụng các tag liên quan đến &ltTABLE><br>
+        Tạo trang Web với các bảng như mô tả dưới đây: (dùng các thuộc tính colspan, rowspan, cellpading, …) </h1>
+    <table border="1" style="margin-left:400px;">
+        <tr>
+            <th width="40px" height="40px" style="background-color:white">1</th>
+            <th colspan="3" width="200" height="40px" style="background-color:white">2</th>
+        </tr>
+        <tr style="background-color:orange">
+            <th rowspan="3" width="40px" height="130px" style="background-color:white">3</th>
+            <th width="55px" height="45px">4</th>
+            <th width="55px" height="45px">5</th>
+            <th rowspan="2" style="background-color:yellow">6</th>
+        </tr>
+        <tr style="background-color:orange">
+            <th width="55px" height="45px">7</th>
+            <th width="55px" height="45px">8</th>
+        </tr>
+        <tr style="background-color:yellow">
+            <th colspan="2" height="50px">9</th>
+            <th>10</th>
+        </tr>
+    </table>
+    <hr size="2px" color="gray">
+    <table border="1"
+        style="font-family:'Times New Roman', Times, serif; background-color:bisque; color:brown; margin-left:400px;">
+        <tr style="color: black;">
+            <th>(1)</th>
+            <th>(2)</th>
+            <th>(3)</th>
+            <th width=100px>(4)</th>
+            <th>(5)</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th colspan="3" align="left"><u>Part I</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2" align="left"><u>Chapter 1</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section A</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section B</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2" align="left"><u>Chapter 2</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section A</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section B</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th colspan="3" align="left"><u>Part II</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2" align="left"><u>Chapter 3</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section A</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section B</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th colspan="2" align="left"><u>Chapter 4</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section A</u></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"></th>
+            <th align="left"><u>Section B</u></th>
+            <th></th>
+        </tr>
+    </table>
+    <h4 style="margin-left:400px;">With cellpadding: </h4>
+    <table border="1" cellpadding="6.470" style="margin-left:400px" width="150px" height="150px" bgColor="white">
+        <tr>
+            <th>6.470</th>
+            <th>6.470</th>
+        </tr>
+        <tr>
+            <th>6.470</th>
+            <th>6.470</th>
+        </tr>
+    </table>
+    <h4 style="margin-left:400px;">Table with spanning row: </h4>
+    <table border="1" style="margin-left: 400px;" width="150px" height="150px" bgColor="white">
+        <tr>
+            <th>6.470</th>
+            <th>6.470</th>
+        </tr>
+        <tr>
+            <th rowspan="2">6.470</th>
+            <th>6.470</th>
+        </tr>
+        <tr>
+            <th>6.470</th>
+        </tr>
+    </table>
+    <hr size="2px" color="grey">
+    <table style="margin-left: 300px; background-color:rgb(243, 217, 243)" border="2" borderColor="fuchsia">
+        <caption style="color:fuchsia"><b>NUMBERS 1-5 in VARIOUS LANGUAGES</b></caption>
+        <tr style="background-color:violet;">
+            <th width="13px" style="background-color:rgb(243, 217, 243)"></th>
+            <th><u><b>English</b></u></th>
+            <th><u><b>Español</b></u></th>
+            <th><u><b>Français</b></u></th>
+            <th><u><b>Italiano</b></u></th>
+            <th><u><b>Deutsch</b></u></th>
+        </tr>
+        <tr style="color: blue;">
+            <th style="color:black; background-color:lightskyblue">1</th>
+            <th><i>one</i></th>
+            <th><i>uno</i></th>
+            <th><i>un</i></th>
+            <th><i>uno</i></th>
+            <th><i>eins</i></th>
+        </tr>
+        <tr style="color: blue;">
+            <th style="color:black; background-color:lightskyblue">2</th>
+            <th><i>two</i></th>
+            <th><i>dos</i></th>
+            <th><i>deux</i></th>
+            <th><i>due</i></th>
+            <th><i>zwei</i></th>
+        </tr>
+        <tr style="color: blue;">
+            <th style="color:black; background-color:lightskyblue">3</th>
+            <th><i>three</i></th>
+            <th><i>tres</i></th>
+            <th><i>trois</i></th>
+            <th><i>tre</i></th>
+            <th><i>drei</i></th>
+        </tr>
+        <tr style="color: blue;">
+            <th style="color:black; background-color:lightskyblue">4</th>
+            <th><i>four</i></th>
+            <th><i>cuatro</i></th>
+            <th><i>quatre</i></th>
+            <th><i>quattro</i></th>
+            <th><i>vier</i></th>
+        </tr>
+        <tr style="color: blue;">
+            <th style="color:black; background-color:lightskyblue">5</th>
+            <th><i>five</i></th>
+            <th><i>cinco</i></th>
+            <th><i>cinq</i></th>
+            <th><i>cinque</i></th>
+            <th><i>fünf</i></th>
+        </tr>
+    </table>
+</body>
+
+</html>

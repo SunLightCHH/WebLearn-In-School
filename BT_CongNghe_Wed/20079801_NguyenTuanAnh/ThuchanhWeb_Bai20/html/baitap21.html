@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap 21</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/myStyle.css">   -->
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        let i = 0
+
+        function napDSSP(dssp){
+            dssp.forEach(sp => {
+                let row = "<tr><td class='text-center'>"+(++i)+"</td><td>"+sp.tensp+"</td><td><img src='"+sp.hinhanh+"' width='100'></td><td contenteditable='true' onkeyup='getTongtien()'>"+sp.soluong+"</td><td class='text-right'>"+sp.dongia+"</td></tr>"
+
+                let myTable = document.getElementById("tbl")
+                let newRow = myTable.insertRow(myTable.rows.length)
+                newRow.innerHTML = row
+            });
+        }
+
+        function getTongtien(){
+            let tongtien = 0
+            let myTable = document.getElementById("tbl")
+            let rows = myTable.rows.length
+            for(let i = 0; i < rows; i++){
+                let soluong = myTable.rows[i].cells[3].innerHTML
+                let dongia = myTable.rows[i].cells[4].innerHTML
+                let thanhtien = soluong * dongia
+
+                tongtien += thanhtien
+            }
+
+            document.getElementById("total").innerHTML = tongtien
+        }
+
+        window.onload = function(){
+            napDSSP(dssp)
+            getTongtien()
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <table class="table table-hover table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>STT</th>
+                        <th>TenSP</th>
+                        <th>Hinh anh</th>
+                        <th>So luong</th>
+                        <th>Don gia</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl">
+                    <!-- <tr>
+                        <td class='text-center'>1</td>
+                        <td>Chau hoa 1</td>
+                        <td><img src='../img/chau1.jpg' width='100'></td>
+                        <td contenteditable='true' onkeyup='getTongtien()'>10</td>
+                        <td class='text-right'>100000</td>
+                    </tr> -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="font-weight-bold text-right">Tong thanh tien: </td>
+                        <td id="total" class="font-weight-bold text-right"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

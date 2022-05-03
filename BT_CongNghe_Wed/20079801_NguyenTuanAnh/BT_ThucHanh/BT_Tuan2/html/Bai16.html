@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 16</title>
+    <style>
+        body {
+            margin-left: 10%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
+    <form>
+        <label for="name">Full name*:</label> <br>
+        <input type="text" size="20" maxlength="30" id="name" placeholder="Firstname Lastname" required
+            oninvalid="this.setCustomValidity('Please fill out this field.')"><br>
+        <label for="mail">Email address*:</label><br>
+        <input type="email" size="20" maxlength="50" id="name" placeholder="EMAIL_ADDRESS"><br>
+        <label for="tour">Select Tour Package*:</label><br>
+        <select name="tour" id="tour" style="background-color: rgba(230, 225, 225, 0.637);">
+            <option>Goa</option>
+            <option>VIP</option>
+            <option>Trader</option>
+        </select><br>
+        <label for="arrDay">Arrival date*:</label><br>
+        <input type="text" name="arrDay" id="arrDay" size="20" placeholder="m/d/y" required
+            oninvalid="this.setCustomValidity('Please fill out this field.')"><br>
+        <label for="persons">Number of persons:*</label><br>
+        <input type="number" name="persons" id="persons" size="20" placeholder="UNKNOWN_TYPE" min="0" value="0"><br>
+        <label for="object">What would you want to avail?</label><br>
+        Boarding<input type="checkbox" name="nội trú" id="object" value="Boarding"><br>
+        Fooding<input type="checkbox" name="Thức ăn" id="object" value="Fooding"><br>
+        Sight seeing<input type="checkbox" name="tham quan" id="object" value="Sight seeing"><br>
+        <label for="codeSale">Discout Coupon code</label><br>
+        <input type="" placeholder="UNKNOWN_TYPE"><br>
+        <label for="điều khoản">Term and conditions</label><br>
+        <input type="radio" name="điều khoản" id="điều khoản">I agree
+        <input type="radio" name="điều khoản" id="điều khoản">I disagree<br>
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+
+</html>

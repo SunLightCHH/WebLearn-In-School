@@ -1,0 +1,47 @@
+body{
+    font-size:25px;
+}
+h1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color:#fff;
+    background-color: #666666;
+    margin:0px;
+    padding: 10px;
+    height: 60px;
+    z-index: 2;
+}
+div.nav{
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 180px;
+    height: 400px;
+    padding: 10px;
+    background-color: #d6d6d6;
+}
+p.abstract{
+    font-weight: bold;
+}
+.floatLeft{
+    float: left;
+    margin: 0 15px 15px 0px;
+    width: 100px;
+    height: 100px;
+}
+div.nav:before{
+    content: "Navigation";
+    font-size: 26px;
+    font-weight: bold;
+}
+#floatRight{
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 0px;
+    width: 80%;
+    height: 100px;
+}

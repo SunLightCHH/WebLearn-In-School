@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        body {
+            width: 960px;
+            box-shadow: 0 0 3px 5px orangered;
+        }
+
+        #header {
+            height: 100px;
+            background-color: blue;
+
+            position: relative;
+        }
+
+        #header h1 {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            color: white;
+            font-size: 60px;
+            text-shadow: -1px -2px 0px orange,
+            -2px -4px 0px red
+            ;
+        }
+
+        #content-left {
+            width: 70%;
+            height: 600px;
+            float: left;
+        }
+
+        #content-left input, 
+        #content-left select,
+        #content-left input:focus,
+        #content-left select:focus
+         {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid orangered;
+            outline: none;
+        }
+
+        #content-left button {
+            width: 70px;
+            background-color: aqua;
+            border: none;
+            box-shadow: 0 0 3px 5px red;
+            border-radius:50px;
+        }
+
+        .row {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        #content-right {
+            width: 30%;
+            float: left;
+        }
+
+        #content-right li {
+            list-style: none;
+            border-bottom: 1px solid gray;
+        }
+
+        #content-right li a {
+            text-decoration: none;
+            line-height: 30px;
+        }
+
+        #content-right li a:hover {
+            color: blue;
+        }
+
+        #footer {
+            clear: both;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Tieu de web</h1>
+    </div>
+    <div id="content-left">
+
+        <form action="">
+            <div class="row"><input type="text" placeholder="Enter your name"></div>
+            <div class="row">
+                <select name="" id="">
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                </select>
+            </div>
+            <div class="row">
+                <button type="button">Submit</button>
+            </div>
+        </form>
+
+    </div>
+    <div id="content-right">
+        <ul>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+        </ul>
+    </div>
+    <div id="footer">Footer</div>
+</body>
+</html>

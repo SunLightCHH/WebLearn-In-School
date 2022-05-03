@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+        <title>Bắt đầu từ phần Favicon đến Tables trong W3School</title>
+        <link rel="icon" type="image/x-icon" href="../Hinh/favicon.ico">
+        <link rel="stylesheet" href="../css/style_day5.css">
+    </head>
+    <body>
+        <h1 align="center">Click <a href="https://www.w3schools.com/html/html_favicon.asp">tại đây</a> 
+            để đến trang Favicon trong W3School
+        </h1>
+        <h1 align="center">Click <a href="https://www.w3schools.com/html/html_tables.asp">tại đây</a> 
+            để đến trang Tables trong W3School
+        </h1>
+        <ol type="1">
+            Mục lục:
+            <li><a title="Phần C" href="#C">Các kiểu viền của bảng</a><br></li>
+            <li><a title="Phần D" href="#D">Màu viền (border-color)</a></li>
+            <li><a title="Phần E" href="#E">Bảng có sọc vằn</a></li>
+            <li><a title="Phần F" href="#F">Ẩn cột</a></li>
+        </ol>
+        <mark style="font-size:25px">HTML Favicon (biểu tượng HTML)</mark>
+        <p>Là 1 hình ảnh nhỏ, đơn giản bất kì, có độ tương phản cao.<br>
+            Được hiển thị ở bên trái tag. Cú pháp để chạy biểu tượng (favicon) là:
+            <div>&ltlink rel="icon" type="image/x-icon" href="/images/favicon.ico"></div>
+            <p><mark style="background-color:coral">Chú ý:</mark> 
+            Thêm nó vào phần &lthead> sau phần &lttitle></p>
+        </p>
+        <!--Hết phần favicon-->
+        <hr>
+        <p class="đầu_mục">A) Đường viền bảng thu gọn:</p>
+        <p>Để tránh việc có 2 đường viền giống như khi ta khai báo bảng có thuộc tính <mark>border: 1px</mark> 
+        ta đặt thuộc tính CSS <mark class="đánh_dấu_thuộc_tính">border-collapse</mark> 
+        thành <mark class="đánh_dấu_thuộc_tính">collapse</mark>. Lệnh nằm trong phần
+        <mark>style_day5.css</mark>
+        </p>
+        <table style="width:80%;">
+            <tr>
+                <th>Mã số sinh viên</th>
+                <th>Họ và tên đệm</th>
+                <th>Tên</th>
+            </tr>
+            <tr>
+                <td>20079801</td>
+                <td>Nguyễn Tuấn</td>
+                <td>Anh</td>
+            </tr>
+            <tr>
+                <td>20065689</td>
+                <td>Trần Vĩnh</td>
+                <td>Phát</td>
+            </tr>
+        </table>
+        <!--Hết phần A-->
+        <p style="background-color:chartreuse;">B) Đường viền tròn trong bảng</p>
+        <p>Sử dụng thuộc tính <mark class="đánh_dấu_thuộc_tính">border-radius</mark> 
+            để góc của các viền được bo tròn. Code: <mark>border-radius: số px</mark>. Ví dụ: border-radius: 10px<br>
+        </p>
+    </p>
+    <table style="width:80%; border-radius: 10px; border-collapse: unset;">
+        <caption>Bảng ví dụ về đường viền tròn</caption>
+        <tr >
+            <th style="border-radius: 10px; border-collapse: unset;">Mã số sinh viên</th>
+            <th style="border-radius: 10px; border-collapse: unset;">Họ và tên đệm</th>
+            <th style="border-radius: 10px; border-collapse: unset;">Tên</th>
+        </tr>
+        <tr>
+            <td style="border-radius: 10px; border-collapse: unset;">20079801</td>
+            <td style="border-radius: 10px; border-collapse: unset;">Nguyễn Tuấn</td>
+            <td style="border-radius: 10px; border-collapse: unset;">Anh</td>
+        </tr>
+        <tr>
+            <td style="border-radius: 10px; border-collapse: unset;">20065689</td>
+            <td style="border-radius: 10px; border-collapse: unset;">Trần Vĩnh</td>
+            <td style="border-radius: 10px; border-collapse: unset;">Phát</td>
+        </tr>
+    </table>
+    <!--Hết phần B-->
+    <a name="C"></a>
+    <p style="background-color:chartreuse;">C) Các kiểu viền của bảng</p>
+    <p>Sử dụng thuộc tính <mark style="background-color: rgb(240, 216, 220); color:red">border-style</mark>
+để cài đặt cách xuất hiện của viền. Các giá trị được cho phép của border-style:<br>
+        <img src="D:\OneDrive - Industrial University of HoChiMinh City\Pictures\Screenshots\Vien_bang.png"><br>
+        Ví dụ: border-style: dotted;
+    </p>
+    <table style="width:80%; border-style: dotted; border-collapse: collapse;">
+        <caption>Bảng ví dụ về kiểu viền</caption>
+        <tr >
+            <th style="border-style: dotted; border-collapse: collapse;">Mã số sinh viên</th>
+            <th style="border-style: dotted; border-collapse: collapse;">Họ và tên đệm</th>
+            <th style="border-style: dotted; border-collapse: collapse;">Tên</th>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border-style: dotted;">20079801</td>
+            <td style="border-collapse: collapse; border-style: dotted;">Nguyễn Tuấn</td>
+            <td style="border-collapse: collapse; border-style: dotted;">Anh</td>
+        </tr>
+        <tr>
+            <td style="border-collapse: collapse; border-style: dotted;">20065689</td>
+            <td style="border-collapse: collapse; border-style: dotted;">Trần Vĩnh</td>
+            <td style="border-collapse: collapse; border-style: dotted;">Phát</td>
+        </tr>
+    </table>
+    <!--Hết phần C-->
+    <a name="D"></a>
+    <p class="đầu_mục">D) Màu viền (border-color)</p>
+    <p>Sử dụng thuộc tính <mark style="background-color: rgb(240, 216, 220); color:red">border-color</mark>
+     để thay đổi màu của viền.
+    </p>
+    <table style="width:80%; border-style: solid; border-color: green">
+        <caption>Bảng ví dụ về màu nền</caption>
+        <tr >
+            <th style="border-style: solid; border-color: green">Mã số sinh viên</th>
+            <th style="border-style: solid; border-color: green">Họ và tên đệm</th>
+            <th style="border-style: solid; border-color: green">Tên</th>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-color: green">20079801</td>
+            <td style="border-style: solid; border-color: green">Nguyễn Tuấn</td>
+            <td style="border-style: solid; border-color: green">Anh</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-color: green">20065689</td>
+            <td style="border-style: solid; border-color: green">Trần Vĩnh</td>
+            <td style="border-style: solid; border-color: green">Phát</td>
+        </tr>
+    </table><br>
+    <a href="#">Back to top</a>
+    <!--Hết phần D-->
+    <a name="E"></a>
+    <p class="đầu_mục">E) Bảng có sọc vằn</p>
+    <p>Để biến cái bảng của bạn có các 2 màu xen kẽ nhau (giống vằn) ta sử dụng thuộc tính 
+        <mark class="đánh_dấu_thuộc_tính">:nth-child(even/odd)</mark>. Code mẫu:<br>
+        <b style="color:blueviolet">tr:nth-child(odd){<br>
+            background-color:lemonchiffon;<br>
+        }</b><br>
+        Có thể thay tr thành th hoặc td tùy ý.
+    </p>
+    <p><mark>Chú ý</mark>: Đoạn code mẫu chỉ có thể viết bằng CSS và nằm trong <mark>style_day5.css</mark></p>
+    <br><a href="#">Back to top</a>
+    <!--Hết phần E-->
+    <a name="F"></a>
+    <p class="đầu_mục">F) Ẩn cột</p>
+    <p>Để ẩn cột ta sử dụng thuộc tính <mark class="đánh_dấu_thuộc_tính">visibility: collapse</mark>. Code mẫu:<br>
+        <b style="color:blueviolet">&ltcol span="3" style="visibility: collapse"></b><br>
+    </p>
+    <table style="width:80%; border-style: solid; border-color: green">
+        <caption>Bảng ví dụ về ẩn cột</caption>
+        <colgroup>
+            <col span="1">
+            <col span="1" style="visibility:collapse;">
+        </colgroup>
+        <tr >
+            <th style="border-style: solid; border-color: green">Mã số sinh viên</th>
+            <th style="border-style: solid; border-color: green">Họ và tên đệm</th>
+            <th style="border-style: solid; border-color: green">Tên</th>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-color: green">20079801</td>
+            <td style="border-style: solid; border-color: green">Nguyễn Tuấn</td>
+            <td style="border-style: solid; border-color: green">Anh</td>
+        </tr>
+        <tr>
+            <td style="border-style: solid; border-color: green">20065689</td>
+            <td style="border-style: solid; border-color: green">Trần Vĩnh</td>
+            <td style="border-style: solid; border-color: green">Phát</td>
+        </tr>
+    </table><br>
+    <a href="#">Back to top</a>
+    </body>
+</html>

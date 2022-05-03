@@ -1,0 +1,49 @@
+.c1_ngang{
+    display: flex;
+    list-style-type: none;
+    margin-left: 15%;
+}
+.stitched{
+    width: 150px;
+    padding: 5px;
+    background: #aa3030;   
+    font-size: 20px;
+    border: 1px solid black;
+    font-weight: normal;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-shadow: -0.5px -0.5px rgb(124, 123, 123), 0.5px 0.5px rgb(124, 123, 123);
+}
+h1{
+    color: #aa3030;
+    text-align: center;
+    text-shadow: 0.5px 0px rgb(124, 123, 123), 0.7px 0.5px rgb(124, 123, 123);
+}
+a:visited{
+    color:white;
+    text-decoration: none;
+    text-shadow: -0.5px -0.5 rgb(221, 216, 216),0.5px 0.5 rgb(221, 216, 216);
+}
+.section{
+    margin-top: 50px;
+    background-color: grey;
+    padding: 10px;
+}
+.menu2{
+    display: flex;
+}
+.menu2 li{
+    width: 230px;
+    padding: 25px;  
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    list-style-type: none;
+}
+.menu2 li a:hover{
+    color:#aa3030;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <title>Ngày số 2. Bắt đầu từ phần style đến color trong W3school</title>
+</head>
+<!--Cấu trúc sử dụng style là: style="tên đặc tính : giá trị tướng ứng vói đặc tính đó"-->
+<body bgcolor="pink" topmargin="100px" leftmargin="40px">
+    <h1 align="center" >
+        <p style="font-family:'Times New Roman', Times, serif; color:black">
+            Click
+            <a href="https://www.w3schools.com/html/html_styles.asp" style="color:lightcoral"> tại đây</a>
+            để đến trang style trong W3school.
+        </p>
+        <p style="font-family:'Times New Roman', Times, serif; color:black">
+            Click
+            <a href="https://www.w3schools.com/html/html_colors.asp" style="color:white">tại đây</a>
+            để đến trang color trong W3school.
+        </p>
+    </h1>
+    <p>
+            <b>&ltb&gt - In đậm chữ</b><br>
+            <strong>&ltstrong&gt - văn bản quan trọng (chữ trong đây đều được in đậm)</strong><br>
+            <i style="color: red;">&lti&gt - Chữ in nghiêng</i><br>
+            <em style="color: red;">&ltem&gt - văn bản được nhấn mạnh (chữ trong đây đều được in nghiêng)</em><br>
+            <mark>&ltmark&gt - văn bản được đánh dấu</mark><br>
+            <small style="color: brown;">&ltsmall&gt - văn bản nhỏ hơn bình thường</small><br>
+            &ltdel&gt -<del> Xóa văn bản </del>(Tag này sẽ tạo ra dấu gạch ngang tại văn bản chứa trong nó)<br>
+            &ltins&gt -<ins> Chèn văn bản </ins>(Tag này sẽ gạch chân văn bản chứa trong nó)<br>
+            <sub style="color: deeppink;">&ltsub&gt - Chỉ số dưới của văn bản</sub>
+            Ví dụ: Kí hiệu của nước: H<sub>2</sub>O<br>
+            <sup style="color:deeppink">&ltsup&gt - Chỉ số trên của văn bản</sup>
+            Ví dụ: Kí hiệu bình phương: x<sup>2</sup><br>
+    </p>
+    <hr>
+    <mark style="font-size:20px">Trình duyệt thường thụt lề khi gặp&ltblockquote>, ví dụ:</mark>
+    <p>Đây là 1 trích dẫn của game Genshin Impact từ website wikipedia:</p>
+<!--<blockquote> định nghĩa đoạn văn bên trong nó được trích từ 1 nguồn nào đó-->
+    <blockquote cite="https://vi.wikipedia.org/wiki/Genshin_Impact">
+        Genshin Impact là một trò chơi hành động nhập vai sinh tồn phiêu lưu trong thế giới mở do miHoYo 
+        của Trung Quốc phát triển. Genshin Impact là IP được miHoYo phát triển tiếp nối sau IP trước là series 
+        Honkai. Trò chơi ra mắt chính thức vào ngày 28 tháng 9 năm 2020 trên các nền tảng Android, iOS, 
+        Microsoft Windows, PlayStation 4, PlayStation 5, thời điểm ra mắt chính thức trên Nintendo Switch 
+        chưa được thông báo.
+    </blockquote>
+    <ins style="font-size: 20px; color:honeydew">Khi gặp tag &ltq> trình duyệt sẽ tự động đóng ngoặc đoạn văn trong đó. Ví dụ:</ins>
+    <!--chỉ nên sử dụng <q> cho các trích dẫn ngắn như tường thuật lại lời nói của ai đó hoặc các giải thưởng,....-->
+    <p>Apple đã trao giải Genshin Impact với <q>Game iPhone của năm</q></p>
+    <hr>
+    <mark style="font-size:20px">tag &ltabbr> dùng để định nghĩa 1 chữ viết tắt hoặc 1 từ viết tắt</mark>
+    <!--Mẹo: nên sử dụng chung với title để khi di chuột vào ta biết nó viết tắt của từ gì-->
+    <p>The <abbr title="World Trade Organization">WTO</abbr> has founded in 1995</p>
+    <p>Việc đánh dấu từ viết tắt sẽ cung cấp những thông tin hữu ích cho trình duyệt, hệ thống dịch thuật 
+        công cụ tìm kiếm</p>
+    <hr>
+    <em style="font-size:20px"><ins>Tag &ltaddress> dùng để ghi tên tác giả/chủ sở hữucủa 1 tài liệu hoặc 1 bài báo</ins></em>
+    <!--Thông tin liên hệ có thể là 1 URL, địa chỉ mail, địa chỉ nhà,....-->
+    <p style="font-size:20px">Các kiểu chữ trong &ltaddress> luôn được in nghiêng. Trình duyệt sẽ tự động xuống dòng trước và sau &ltaddress></p>
+    <address style="color: red">
+        Written by Nguyen Tuan Anh<br>
+        Visit me at:<br>
+        <a href="https://www.facebook.com/chuot.nguyen.7583" style="color: blue;">NguyenChuot</a><br>
+        Send Emai: <a href="mailto:tuananh27012002@gmail.com">tuananh27012002@gmail.com</a><br>
+    </address>
+    <hr>
+    <mark bgcolor="green" style="font-size:20px">Tag &ltcite> định nghĩa tiêu đề cho 1 tên của công việc sáng tạo</mark>
+    <p style="font-size:20px">Văn bản trong &ltcite> thường hiển thị dưới dạng chữ nghiêng</p>
+    <img src="../20079801_NguyenTuanAnh/BT_Tuan1/Hinh/Smile.png" alt="Smile">
+    <p> 
+        <cite style="color: red;">The Smile</cite> by Tuan Anh. Painted in 2022.
+    </p>
+    <hr>
+    <!--BDO là viết tắt của Bi-Directional Override (ghi đè 2 hướng)-->
+    <u style="font-size:20px"><i>Tag &ltbdo> dùng để ghi đè hướng văn bản hiện tại</i></u><br>
+    <!--Thuộc tính dir="rlt" sẽ làm cho văn bản viết theo hướng từ phải sang trái-->
+    <!--dir: direction (định hướng)-->
+    <!--rtl: right to left-->
+    <bdo dir="rtl">Đoạn văn bản sẽ được viết theo hướng từ phải sang trái</bdo>
+    <hr>
+    <!--Tạo màu khung viền không phải trong table-->
+    <b style="font-size:20px">Sử dụng style="border:kích thước (px) solid+tên màu" để tạo khung viền và màu của nó</b>
+    <h1 style="border: 2px solid rebeccapurple">Hello World </h1>
+    <h2 style="border: 2px solid royalblue">Hello World</h2>
+    <hr>
+    <i><b style="font-size:20px">Mã màu rgb(red, green, blue) có giá trị của mỗi phần tử red, green, blue 
+    là từ 0 đến 255. Ví dụ:
+    </b></i>
+    <p style="background-color:rgb(255, 0, 0); font-size:30px">rgb(255,0,0) sẽ ra màu đỏ</p>
+    <p style="background-color:rgb(0, 255, 0); font-size:30px">rgb(0,255,0) sẽ ra màu xanh lá</p>
+    <p style="background-color:rgb(0,0,255); font-size:30px">rgb(0,0,255) sẽ ra màu xanh dương</p>
+    <hr>
+    <i><b style="font-size:20px">Mã màu rgba(red, green, blue, alpha) 3 đối số đầu giống với rgb(red, green, blue)
+    còn đối số alpha nói về độ trong suốt và có giá trị từ 0.0(trong suốt) đến 1.0(không trong suốt)
+    </b></i>
+    <p style="background-color:rgba(158, 68, 34, 0.2); font-size:30px">rgba(158, 68, 34, 0.2)</p>
+    <p style="background-color:rgba(100, 120, 119, 1.0); font-size:30px">rgba(100, 120, 119, 1.0)</p>
+    <p style="background-color:rgba(60, 150, 27, 0.5); font-size:30px">rgba(60, 150, 27, 0.5)</p>
+</body>
+</html>

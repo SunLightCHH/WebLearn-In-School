@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Link xem bài tuần 7: <a href="E:\Công nghệ web\tuan 7_DOM.pdf">tại đây</a></h2>
+    <input type="button" onclick="ChangeColor()" value="Nhấn vào đây để biết thêm chi tiết :-)">
+    <input type="button" onclick="stop()" value="Stop đau mắt vl">
+    <script>
+        function Changecolortext(){
+            var colortext = prompt("Nhập màu cần thay đổi của text: ");
+            colortext = "#" + colortext;
+            document.fgColor = colortext;
+        }
+    function ChangeColor(){
+        var BgColor = new Array();
+        BgColor[0] = "#a56733";
+        BgColor[1] = "#99b6f3";
+        BgColor[2] = "#ffff00";
+        BgColor[3] = "#989898";
+        var m = Math.round(Math.random()*4);
+        document.bgColor=BgColor[m];
+        idq = setTimeout("ChangeColor()", 2000);
+    }
+    function stop(){
+        clearTimeout(idq);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kí tự $ Phép nội suy (Interpolation)</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        var a, b
+        a = prompt("Nhập họ của bạn: ");
+        b = prompt("Nhập tên của bạn: ");
+        document.getElementById("demo").innerHTML=`Tên bạn có phải là <B> ${a} ${b} </B>`;
+
+        let header = "Không được để vuột mất cơ hội:";
+        let tag = ["Học kiến thức chuyên ngành", "Nâng cao trình độ tiếng Anh", "Thêm 1 vài kĩ năng sống"];
+        let html = `<h2>${header}</h2><ul>`;
+        for(const x of tag)
+        {
+            html += `<li>${x}</li>`;
+        }
+        html+=`</ul>`;
+        document.getElementById("demo2").innerHTML=html;
+    </script>
+</body>
+</html>

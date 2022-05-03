@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra và sửa lỗi</title>
+</head>
+<body>
+    <p>Các lỗi sai: </p>
+    <ol type="1">
+        <li>Dấu ; sau câu lệnh if đầu tiên. Cách sửa là xóa nó đi</li>
+        <li>Dấu = trong câu lệnh if đầu tiên. Cách sửa là thêm 1 dấu = sau nó</li>
+        <li>Dấu | trong câu lệnh else if. Cách sửa là thêm 1 dấu | sau nó</li>
+    </ol>
+    <script>
+        var userAge=prompt("Please enter your age");
+        if(userAge==0)
+        {
+            alert("So you're a baby!");
+        }
+        else if(userAge<0 || userAge>200)
+            alert("I think you may be lying about your age");
+        else
+        {
+            alert("That's a good age");
+        }
+    </script>
+</body>
+</html>

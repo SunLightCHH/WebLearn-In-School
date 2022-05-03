@@ -1,0 +1,135 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    width: 1200px;      
+    border: 1px solid blue;    
+    color: gray;  
+}
+header{
+    background-color:  #294e79;
+    position: relative;
+    color:white;
+    height: 100px;
+}
+header img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+    width:50px;
+    height:70px;
+}
+header h1{
+    position: absolute;
+    top: 15px;
+    left: 80px;
+}
+header #intro{
+    position: absolute;
+    bottom: 25px;
+    left: 80px;
+}
+header form{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.c1{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    display: flex;
+    list-style-type: none;
+}
+.c1 a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #3d73b1;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+header input::-webkit-input-placeholder, header button{
+    color: white;  
+}
+header input, header button {
+    background-color:  #1c3451;
+    border: 1px solid #3b6da7;
+    padding: 5px;
+}
+section{
+    width: 70%;
+    float: left;
+    padding: 40px 40px 20px 10px;
+}
+section form{
+    width: 60%;
+    float: left;
+    padding-right: 40px;
+}
+section input{
+    width: 160px;
+}
+section textarea {
+    background-color: #f7f7f7;
+    border: 1px solid gray;
+}
+
+section form p:first-child {
+    color: red;
+    text-shadow: 4px 4px 5px green;
+}
+
+#section-right {
+    width: 40%;
+    float: right;
+}
+
+.form_col {
+    width: 50%;
+    float: left;
+}
+
+.form_row {
+    clear: both;
+    line-height: 30px;
+}
+
+aside{
+    width: 28%;
+    float: right;
+    margin: 30px 1%;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+aside img {
+    width: 230px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+aside p:last-child {
+    font-weight: bold;
+    float: right;
+}
+
+h3{
+    border-bottom: 1px dashed gray;
+    line-height: 40px;
+}
+
+footer {
+    clear: both;
+    background-color: #294e79;
+    /* background-image: linear-gradient(red, white); */
+    padding: 5px;
+}

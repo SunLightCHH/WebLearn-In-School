@@ -1,0 +1,10 @@
+div{
+    margin-left:10%;
+    border: 1px solid black;
+    width: 980px;
+    height:600px;
+    background-color:peachpuff;
+}
+header, section{
+    border-bottom: 1px solid black;
+}

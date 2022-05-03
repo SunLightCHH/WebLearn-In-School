@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap JavaScript</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/myStyle.css">   -->
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+
+    <script>
+        
+        let i = 0
+
+        function dangky(){
+            let hoten = document.getElementById("txtHoten").value
+            let errorHoten = document.getElementById("errorHoten")
+            if(hoten.trim()==""){
+                errorHoten.innerHTML = "Ho ten bat buoc nhap"
+                return false
+            }
+
+            let soDT = document.getElementById("txtSoDT").value
+            let regexSoDT = /^\d{9,10}$/
+            let errorSoDT = document.getElementById("errorSoDT")
+            if(soDT.trim() != "" && !regexSoDT.test(soDT)){
+                errorSoDT.innerHTML = "So dien thoai phai co 9 hoac 10 so"
+                return false
+            }
+
+            let namsinh = document.getElementById("txtNamsinh").value
+            let regexNamsinh = /^\d+$/
+            let errorNamsinh = document.getElementById("errorNamsinh")
+
+            if(namsinh.trim() != "" && !regexNamsinh.test(namsinh)){
+                errorNamsinh.innerHTML = "Nam sinh phai go so"
+                return false
+            }
+
+            let temp = eval(namsinh)
+            if(temp >= 2002){
+                errorNamsinh.innerHTML = "Nam sinh phai < 2002"
+                return false
+            }
+
+            errorHoten.innerHTML = "*"
+            errorSoDT.innerHTML = ""
+            errorNamsinh.innerHTML = ""
+
+            let gioitinh = "Nam"
+            let gioitinhNu = document.getElementById("rdoNu").checked
+            if(gioitinhNu)
+                gioitinh = "Nu"
+
+            let thanhpho = document.getElementById("selThanhpho").value
+
+            let row = "<tr><td>"+(++i)+"</td><td>"+hoten+"</td><td>"+gioitinh+"</td><td>"+namsinh+"</td><td>"+soDT+"</td><td>"+thanhpho+"</td></tr>"
+
+            let myTable = document.getElementById("tbl")
+            let newRow = myTable.insertRow(myTable.rows.length)
+            newRow.innerHTML = row
+
+            return true
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <img src="../img/banner.jpg" alt="" width="1140">
+        </div>
+        <h3 class="text-center">Thong tin ca nhan</h3>
+        <form action="">
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtHoten" class="col-md-4 text-right">Ho ten: </label>
+                <div class="col-md-8">
+                    <input type="text" id="txtHoten" class="form-control" required>
+                    <span id="errorHoten" class="text-danger font-italic">*</span>
+                </div>
+            </div>
+
+
+            <div class="row border-bottom m-2 p-2">
+                <label class="col-md-4 text-right">Gioi tinh: </label>
+                <div class="col-md-8">
+                    <input type="radio" id="rdoNam" name="rdoGioitinh" checked>
+                    <label for="rdoNam">Nam</label>
+                    <input type="radio" id="rdoNu" name="rdoGioitinh" class="ml-3">
+                    <label for="rdoNu">Nu</label>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtSoDT" class="col-md-4 text-right">So dien thoai: </label>
+                <div class="col-md-8">
+                    <input type="text" id="txtSoDT" class="form-control">
+                    <span id="errorSoDT" class="text-danger font-italic"></span>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="txtNamSinh" class="col-md-4 text-right">Nam sinh: </label>
+                <div class="col-md-8">
+                    <input type="text" id="txtNamsinh" class="form-control">
+                    <span id="errorNamsinh" class="text-danger font-italic"></span>
+                </div>
+            </div>
+
+            <div class="row border-bottom m-2 p-2">
+                <label for="selThanhpho" class="col-md-4 text-right">Thanh pho: </label>
+                <select id="selThanhpho" class="col-md-8">
+                    <option value="Ha Noi">Ha Noi</option>
+                    <option value="Ho Chi Minh">Ho Chi Minh</option>
+                    <option value="Hai Phong">Hai Phong</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                </select>
+            </div>
+
+            <div class="row justify-content-center p-2">
+                <button type="button" class="btn btn-danger" onclick="dangky()">Dang ky </button>
+                <button type="reset" class="btn btn-info ml-3">Huy</button>
+            </div>
+        </form>
+
+        <div class="row">
+            <table class="table table-hover table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Ho ten</th>
+                        <th>Gioi tinh</th>
+                        <th>Nam sinh</th> 
+                        <th>So dien thoai</th>
+                        <th>Thanh pho</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Le Lan</td>
+                        <td>Nu</td>
+                        <td>1998</td>
+                        <td>0913666999</td>
+                        <td>Ho Chi Minh</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

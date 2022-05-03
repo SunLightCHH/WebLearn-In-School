@@ -1,0 +1,21 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div{
+    margin-left:8%;
+    margin-right:8%;
+    align-content: center;
+    border: 2px solid black;
+}
+img{
+    width: 260px;
+    height: 120px;
+    border-style: solid;
+    border-color:#993738;
+    margin-left: 3px;
+}
+img:hover{
+    border: 5px double #993738;
+}

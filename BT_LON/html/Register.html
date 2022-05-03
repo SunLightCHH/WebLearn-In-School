@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../Css/allHead.css">
+    <link rel="stylesheet" href="../Css/register.css">
+    <link rel="stylesheet" href="../Css/Insurance.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/edtit.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <script src="../jquery/Create_DayMonthYear.js"></script>
+</head>
+
+<body>
+    <header class="row-cols-12 bg-danger"
+        style="padding: 0 150px; position: fixed; z-index: 999999;width: 100%; height:auto;">
+
+        <div class="row col-sm-12" id="header" style="background-color:#dc3545 !important;">
+            <div class="justify-content-between w-100" id="header2" style="display: flex;">
+                <div class="col col-sm-2" style="float: left;">
+                    <div id="header-fix-none">
+                        <div class="w-100">
+                            <a href="../html/TrangChu.html"><img src="../Image/A__3_-removebg-preview.png" alt=""
+                                    class="logo_main"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between col-sm-6">
+                    <div class="d-flex align-items-center ">
+                        <button class="btn btn-success mr-1">
+                            Đăng ký
+                        </button>
+                        <button class="btn btn-success" id=""> Đăng nhập</button>
+                    </div>
+                    <div id="" class="btn-cart mr-0" style="display: inline-block; width: 100px; height: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag-check icon-cart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                        <p class="soluongcart">3</p>
+                    </div>
+                    <form class="navbar form-inline nava-search">
+                        <input class=" form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="icon-search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-search " viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </form>
+
+                </div>
+            </div>
+            <ul id="header-menu" class="menu d-flex align-items-center w-100 mb-0"
+                style="list-style: none; justify-content: space-around;">
+                <li class="nav-item">
+                    <a class="nav-link" href="./TrangChu.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">NỔI BẬT</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./ChiTietSanPham.html">Iphone 13 Pro Max</a>
+                        <a class="dropdown-item" href="./ChiTietSanPham.html">Redmi Note 11</a>
+                        <a class="dropdown-item" href="./ChiTietSanPham.html">Oppo Reno 7</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./ChiTietSanPham.html">Tất cả sản phẩm</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">THƯƠNG HIỆU</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">OPPO</a>
+                        <a class="dropdown-item" href="#">IPHONE</a>
+                        <a class="dropdown-item" href="#">SAMSUNG</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./TrangChu.html">Tất cả thương hiệu</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./KhuyenMai.html">KHUYẾN MÃI</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/GioiThieu.html">GIỚI THIỆU</a>
+                </li>
+
+            </ul>
+
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function () {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("header2").style.display = 'flex';
+                    } else {
+                        document.getElementById("header2").style.display = 'none';
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div>
+                <h1 style="font-family:Arial, Helvetica, sans-serif; color:brown; font-size:35px;">
+                    Đăng kí thành viên
+                </h1>
+            </div>
+            <div>
+                <form action="">
+                    <table class="text">
+                        <tr>
+                            <td><label for="Fname">Họ:</label></td>
+                            <td><input type="text" name="Fname" id="Fname" placeholder="Nguyễn" maxlength="10"
+                                    size="20">
+                                <span class="text-danger" id="erroFname">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Lname">Tên đệm và tên:</label></td>
+                            <td><input type="text" name="Lname" id="Lname" placeholder="Tuấn Anh" maxlength="20"
+                                    size="20">
+                                <span class="text-danger" id="erroLname">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Uname">Tên đăng nhập:</label></td>
+                            <td><input type="text" name="Uname" id="Uname" placeholder="example" maxlength="20"
+                                    size="20">
+                                <span class="text-danger" id="erroUname">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Mật khẩu</label></td>
+                            <td><input type="password" name="pass" id="pass" maxlength="20" size="20"
+                                    placeholder="123456">
+                                <span class="text-danger" id="erroPass">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Xác nhận mật khẩu</label></td>
+                            <td><input type="password" name="repass" id="repass" maxlength="20" size="20">
+                                <span class="text-danger" id="erroRePass">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Email:</label></td>
+                            <td><input type="email" name="mail" id="mail" maxlength="250" size="20"
+                                    placeholder="example@gmail.com">
+                                <span class="text-danger" id="erroEmail">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="SDT">Số điện thoại:</label></td>
+                            <td><input type="tel" name="SDT" id="SDT" maxlength="10" size="20" maxlength="11"
+                                    placeholder="0123456789">
+                                <span class="text-danger" id="erroSDT">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ngày tháng năm sinh:</td>
+                            <td>
+                                <select name="day" id="day" size="1">
+                                    <option value=" " selected="selected">-- Ngày --</option>
+                                </select>
+                                <select name="month" id="month" size="1"></select>
+                                <select name="year" id="year" size="1"></select>
+                                <span>*</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Các hãng điện thoại bạn yêu thích:</p>
+                    <!--Thêm ảnh vào img bên dưới-->
+                    <img title="Apple" src="../Image/Logo/Apple.png" alt="Apple" id="selectImage">
+                    <input type="checkbox" id="apple">
+                    <img title="Samsung" src="../Image/Logo/Samsung.jpg" alt="Samsung" id="selectImage">
+                    <input type="checkbox" id="samsung">
+                    <img title="Xiao Mi" src="../Image/Logo/Xiaomi.png" alt="Xiao Mi" id="selectImage">
+                    <input type="checkbox" id="xiao mi">
+                    <img title="Vivo" src="../Image/Logo/Vivo.png" alt="Vivo" id="selectImage">
+                    <input type="checkbox" id="vivo">
+                    <img title="Asus" src="../Image/Logo/Asus.jpg" alt="Asus" id="selectImage">
+                    <input type="checkbox" id="asus">
+                    <img title="Huawei" src="../Image/Logo/Huawei.jpg" alt="Huawei" width="140px" height="90px"
+                        align="center">
+                    <input type="checkbox" id="huawei">
+                    <img title="Oppo" src="../Image/Logo/OPPO.png" alt="Oppo" id="selectImage">
+                    <input type="checkbox" id="oppo">
+                    <img title="Meizu" src="../Image/Logo/meizu.png" alt="Meizu" id="selectImage">
+                    <input type="checkbox" id="meizu">
+                    <img title="LG" src="../Image/Logo/LG.jpg" alt="LG" id="selectImage">
+                    <input type="checkbox" id="lg">
+                    <img title="Lenovo" src="../Image/Logo/Lenovo.png" alt="Lenovo" id="selectImage">
+                    <input type="checkbox" id="lenovo">
+                    <img title="Sony" src="../Image/Logo/Sony.png" alt="Sony" id="selectImage">
+                    <input type="checkbox" id="sony">
+                    <img title="Nokia" src="../Image/Logo/Nokia.png" alt="Nokia" width="120px" height="70px"
+                        align="center">
+                    <input type="checkbox" id="nokia">
+                    <img title="Realme" src="../Image/Logo/realme.png" alt="Realme" id="selectImage">
+                    <input type="checkbox" id="realme">
+                    <img title="HTC" src="../Image/Logo/HTC.png" alt="HTC" id="selectImage">
+                    <input type="checkbox" id="htc">
+                    <a id="DangKy"><input type="button" value="Hoàn tất" style="margin-left: 30%;"></a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../jquery/Register.js"></script>
+</body>
+
+</html>

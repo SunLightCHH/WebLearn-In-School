@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+}
+img{
+    margin-left: 30%;
+}
+table,td,tr,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-color: orange;
+}
+table, td{
+    text-align: center;
+    background-color:#ffff81
+}

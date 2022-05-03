@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+        <title>Ngày số 4. Bắt đầu từ phần Imange trong W3school</title>
+        <link rel="Stylesheet" href="../css/style_day4.css">
+    </head>
+    <body>
+        <h1 align="center">
+            <p>Click <a href="https://www.w3schools.com/html/html_images.asp">tại đây</a> để đến trang HTML Image trong W3school</p>
+        </h1>
+        <ol type="1">
+            <p style="border: 0px; color: black; font-size: 50px;"><b>Mục lục:</b></p>
+            <li>
+                <a href="#A">Ảnh động, ảnh chứa link</a>
+            </li>
+            <li>
+                <a href="#B">Bản đồ hình ảnh</a>
+            </li>
+            <ul type="disc">
+                <li>
+                    <a href="#tag_area">Các thuộc tính cần có của tag &ltarea></a>
+                </li>
+            </ul>
+            <li>
+                <a href="#C">Image map and JavaScript</a>
+            </li>
+            <li>
+                <a href="#D">Background Image trên HTML</a>
+            </li>
+            <li>
+                <a href="#E">Phần tử &ltpicture> trong HTML</a>
+            </li>
+        </ol>
+        <ol type="A">
+            <a name="A"></a>
+            <li style="font-size: 40px;">Ảnh động, ảnh chứa link:</li>
+            Ta có thể hiển thị hình ảnh động thay vì hình ảnh tĩnh và có thể gán 1 liên kết bất kì cho nó. 
+            Ví dụ hình dưới đây:<br>
+            <a href="https://www.pinterest.com/pin/291467407129707546/" title="Hình ảnh động Doraemon đẹp">
+                <img src="../Hinh/Doremon_cook.gif" alt="Doraemon đang nấu ăn">
+            </a>
+            <!--Hết phần A-->
+            <a name="B"></a>
+            <li>Bản đồ hình ảnh: </li>
+            Tag <mark>&ltmap> </mark>dùng để xác định 1 image map. 1 image map là 1 hình ảnh với các khu vực có thể click vào. 
+            Những khu vực ấy được định nghĩa trong 1 hoặc nhiều tag <mark>&ltarea></mark>. Các bước thực hiện:
+            <ul type="square">
+                <li>B1: Chèn 1 tấm ảnh vào bằng tag <mark>&ltimg></mark> như bình thường, nhưng khác ở chỗ là thêm thuộc tính
+                <mark>usemap="tên ảnh"</mark> cho nó. Ví dụ:<br><mark>&ltimg src="../Hinh/Lop_hoc.jpg" usemap="#Lop_hoc"></mark>
+                </li>
+                <li>B2: Thêm 1 phần tử <mark>&ltmap>.</mark></li>
+                <p>Tag <mark>&ltmap></mark> được sử dụng để tạo ra 1 bản đồ ảnh, nó liên kết với tấm ảnh bằng 
+                cách sử dụng thuộc tính <mark>name</mark> bắt buộc. Ví dụ: <i style="color: black;">&ltmap name="Lop_hoc"></i>
+                </p>
+                <li>B3: Thêm khu vực có thể nhấn bằng cách sử dụng tag &ltarea>.</li>
+                <a name="tag_area"></a>
+                <li style="color:chartreuse; background-color:coral">Các thuộc tính cần có của tag &ltarea></li>
+                <ol type="1">
+                    <li>Hình dạng (Shape)</li>
+                    Ta phải định dạng hình dạng của khu vực có thể click, và có thể chọn 1 trong các giá trị sau:
+                    <p style="margin: left 50px;">
+                        <mark>rect</mark> - xác định 1 khu vực hình chữ nhật (rectangular)<br>
+                        <mark>circle</mark> - xác định 1 khu vực hình tròn (circular)<br>
+                        <mark>poly</mark> - xác định 1 khu vực hình đa giác  (polygonal)<br>
+                        <mark>default</mark> - xác định toàn bộ khu vực
+                    </p>
+                    <li>Ta cũng phải thêm 1 số tọa độ để có thể xác định vùng có thể click vào ảnh.</li>
+                     <!--Hết phần liệt kê-->
+                    <li>Tạo độ của shape="rect" có 2 cặp x, y:</li>
+                    <p>+ Cặp thứ nhất là xác định tọa độ góc trái trên. Ví dụ:<br>
+                    <b style="border:0px; color:cornsilk">Góc trái trên với tọa độ (x,y) là (33,44)</b><br>
+                    <img title="Góc trái trên" src="../Hinh/Trai_tren.png" width="300px" height="300px">
+                    </p>
+                    <p>+ Cặp thứ hai là xác định tọa độ góc phải dưới. Ví dụ:<br>
+                        <b style="border:0px; color:cornsilk">Góc phải dưới với tọa độ (x,y) là (270,350)</b><br>
+                        <img title="Góc phải dưới" src="../Hinh/Phai_duoi.png" width="300px" height="300px">
+                    </p>
+                    <!--Hết phần shape="rect"-->
+                    <li>Tọa độ của shape="circle" là 1 tọa độ (x, y) của tâm và 1 bán kính. Ví dụ:<br></li>
+                        <p>
+                            Hình tròn có tọa độ tâm (x,y) là (337,300) và bán kính là 44px. Lệnh là:<br>
+                            <b style="color:cornsilk">&ltarea shape="circle" coords="337, 300, 44" href="coffee.htm"></b><br>
+                            <img title="Xác định hình tròn" src="../Hinh/Xac_dinh_hinh_tron.png" width="300px" height="300px">
+                        </p>
+                    <!--Hết phần shape="circle"-->
+                    <li>shape="poly" chứa rất nhiều tọa độ điểm để tạo ra 1 hình đa giác nào đó.</li>
+                    <p>Nó có thể tạo ra bất kì hình dạng nào. Ví dụ:
+                        <b style="color:cornsilk">Biến chiếc bánh bò dưới thành liên kết nhấp được. Lệnh:<br>
+                            <i style="color:rgb(93, 234, 236)">&ltarea shape="poly" coords="140,121,181,116,204,160,204,222,191,270,
+                                140,329,85,355,58,352,37,322,40,259,103,161,128,147" 
+                            href="croissant.htm"></i>
+                            <img title="Bánh sừng bò" src="../Hinh/Banh_sung_bo.png" width="300px" height="500px">
+                        </b>
+                    </p>
+                    <!--Hết phần shape="poly"-->
+                </ol>
+            </ul>
+            <!--Cho vào pain để xác định tạo độ cho dễ-->
+            <p style="border:0px; color:black">Đây là 1 ví dụ cho việc tạo bản đồ hình (Image maps):<br>
+            <i style="color:bisque">Tip: Hãy thử nhấn vào cái đồng hồ treo tường, bảng đen, bản đồ</i>
+            </p>
+            <img src="../Hinh/Lop_hoc.jpg" usemap="#Lop_hoc" width="1000px" height="667px">
+            <map name="Lop_hoc">
+                <area title="đồng hồ treo trường" shape="circle" coords="453,165,23" alt="clock" href="https://kashiclock.com.vn/dong-ho-treo-tuong-hm-321?gclid=Cj0KCQiA8vSOBhCkARIsAGdp6RRwb7Vlzg7TzYq_GLgt9qOFj6gUWmAKNoMB9x547XWiWsmeCJypEiYaAgm2EALw_wcB">
+                <area title="Bảng đen" shape="rect" coords="317,196,589,348" alt="board" href="https://www.bangghim.com/cach-bao-quan-su-dung-bang-den.htm">
+                <area title="Bản đồ thế giới" shape="poly" coords="902,234,901,355,998,390,998,204" alt="World map" href="https://galaxylands.com.vn/ban-do-the-gioi-va-ban-do-6-chau-luc-the-gioi-phong-to/">
+            </map><br>
+            <a href="#">Back to top</a>
+            <!--Hết phần B-->
+            <a name="C"></a>
+            <li>Image map and JavaScript</li>
+            <p>Một khu vực có thể click cũng có thể kích hoạt bằng hàm JavaScript.<br>
+            Thêm 1 thuộc tính <mark style="background-color: pink;">click</mark> vào &ltarea> để thực hiện hàm JavaScript.<br>
+            Code:<br>
+            <i style="color:darkblue;">&ltmap name="Lophoc"><br>
+                &ltarea title="Bảng đen" shape="rect" coords="317,196,589,348" alt="board" href="https://www.bangghim.com/cach-bao-quan-su-dung-bang-den.htm"
+                onclick="myfunction()"><br>
+            &lt/map><br>
+            &ltscript><br>
+                function myfunction()
+                {<br>
+                    alert("You clicked the board!")
+                }<br>
+            &lt/script>
+            </i>
+            </p>
+            <a href="#">Back to top</a>
+            <img src="../Hinh/Lop_hoc.jpg" usemap="#Lophoc" width="1000px" height="667px">
+            <map name="Lophoc">
+                <area title="Bảng đen" shape="rect" coords="317,196,589,348" alt="board" href="https://www.bangghim.com/cach-bao-quan-su-dung-bang-den.htm"
+                onclick="myfunction()">
+            </map>
+            <!--Thuộc tính function để tạo hàm JavaScript
+                Thuộc tính alert để hiện 1 cảnh báo khi ta thực hiện 1 hành động gì đó (Ở đây là click vào bảng)
+            -->
+            <script>
+                function myfunction()
+                {
+                    alert("You clicked the board!")
+                }
+            </script>
+            <!--Hết phần C-->
+            <a name="D"></a>
+            <li>Background Image trên HTML</li>
+            <p style="color:black ; background-image: url('https://assets2.rockpapershotgun.com/keqing-promo-art.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/keqing-promo-art.jpg')">
+                Ta có thể cho phần Background là 1 tấm hình dựa vào câu lệnh 
+                <mark>style="background-image: url('tên nguồn chứa hình');"</mark> Nó chỉ chạy với các tag &ltp> và &ltdiv>.
+            </p>
+            <pre>Các thuộc tính liên quan đến background-image:
+    + background-repeat: dùng để lặp lại 1 tấm ảnh. Thường là mặc định, nếu như 
+    ảnh nhỏ hơn khung thì nó sẽ tự động lặp lại. Sử dụng:
+    <mark>background-repeat: no-repeat</mark> để dừng việc lặp hình ảnh lại.
+
+    + background-attachment: fixed dùng để chắc chắn rằng toàn bộ phần tử luôn
+    được bao phủ.
+
+    + background-size: dùng để định kích thước của background. Sử dụng:
+    <mark>background-size: cover</mark> để hình nền bao phủ toàn bộ phần tử.
+    Muốn hình nền kéo dài toàn bộ phần tử dù kích thước của cửa sổ có thay đổi
+    thì đặt thuộc tính như sau:
+    <mark>background-size: 100% 100%</mark>
+    <a href="#">Back to top</a>
+            </pre>    
+        <!--Hết phần D-->
+        <a name="E"></a>
+        <li>Phần tử &ltpicture> trong HTML</li>
+        Nó cho phép ta hiển thị những tấm ảnh khác nhau qua các thiết bị hoặc kích thước màn hình khác nhau
+        <pre>Phần tử <mark>&ltpicture></mark> giúp các nhà phát triển web linh hoạt hơn trong việc chỉ định
+tài nguyên hình ảnh.
+
+Phần tử <mark>&ltpicture></mark> chứa một hoặc nhiều phần tử &ltsource>, mỗi phần tử đề cập đến
+các hình ảnh khác nhau thông qua srcset thuộc tính. Bằng cách này, trình duyệt
+có thể chọn hình ảnh phù hợp nhất với chế độ xem và / hoặc thiết bị hiện tại.
+                
+Mỗi phần tử <mark>&ltsource></mark> có một <mark>media</mark> thuộc tính xác định
+thời điểm hình ảnh phù hợp nhất.
+
+Thay đổi kích thước cửa sổ để thấy sự thay đổi trong hình Đen Vâu bên dưới:
+        </pre>
+        <picture>
+            <source media="(min-width: 650px)" srcset="../Hinh/Lon_xon_3.jpg">
+            <source media="(min-width: 50px)" srcset="../Hinh/Banh_sung_bo.png">
+            <img src="../Hinh/Lop_hoc.jpg" style="width:auto;">
+        </picture>
+        <p>Có 2 mục đích chính để sử dụng <mark>&ltpicture></mark>:<br>
+            <b style="color:cyan">1. Băng thông</b><br>
+            Nếu bạn có màn hình hoặc thiết bị nhỏ, không nhất thiết phải tải tệp hình ảnh lớn.<br>
+            Trình duyệt sẽ sử dụng phần tử <mark>&ltsource></mark> đầu tiên có các giá trị thuộc tính phù hợp 
+            và bỏ qua bất kỳ phần tử <mark>&ltsource></mark> nào theo sau.<br>
+            <b style="color:cyan">2. Hỗ trợ định dạng</b><br>
+            Một số trình duyệt hoặc thiết bị có thể không hỗ trợ tất cả các định dạng hình ảnh. 
+            Bằng cách sử dụng phần tử <mark>&ltpicture></mark>, bạn có thể thêm hình ảnh của tất cả các định dạng và 
+            trình duyệt sẽ sử dụng định dạng đầu tiên mà nó nhận ra và bỏ qua bất kỳ phần tử nào <mark>&ltsource></mark> theo sau.
+        </p>
+        <a href="#">Back to top</a>
+        <!--Hết phần E-->
+        </ol>
+    </body>
+</html>

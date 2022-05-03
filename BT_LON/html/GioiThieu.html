@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <!-- <link rel="stylesheet" href="../Css/edtit.css"> -->
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist (1)/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+
+    <style>
+        #myBtn {
+            /* display: none; */
+            position: fixed;
+            left: 210px;
+            top: 140px;
+            z-index: 99999999999999999999999999;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            background-color: rgb(61, 77, 91);
+            /* #dc3545 */
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        #myBtn2 {
+            /* display: none; */
+            position: fixed;
+            width: 10%;
+            left: 210px;
+            top: 120px;
+            z-index: 99999999999999999999999999;
+            font-size: 14px;
+            border: none;
+            /* outline: none; */
+            /* background-color: rgb(61, 77, 91); */
+            /* #dc3545 */
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #da3546;
+            color: black;
+        }
+        .wid{
+            min-height: 400px;
+        }
+    </style>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="alert mb-0">
+        <h2 class="col-sm-12 alert alert-success text-center mb-0 bg-danger"
+            style="color: rgb(255, 255, 255); font-weight: bold;">
+            THÀNH VIÊN & WEBSITE</h2>
+    </header>
+
+    <section class="wid">
+        <div class="row container alert alert-success mp-0" style="padding-top: 10px; margin: 0 auto;">
+            <div class="col-md-2 mr-1" >
+                <p class="ml-3 row row-cols-1" id="myBtn2">
+                    <a class="btn btn-danger ml-4 mb-2 text-left" data-toggle="collapse" href="#aboutMember"
+                        role="button" aria-expanded="false" aria-c2ntrols="aboutMember">
+                        1. Thành Viên
+                    </a>
+
+                    <a class="btn btn-danger ml-4 mb-2 text-left" data-toggle="collapse" href="#website" role="button"
+                        aria-expanded="false" aria-controls="website">
+                        2. Website
+                    </a>
+
+                    <a class="btn btn-danger ml-4 mb-2 text-left" data-toggle="collapse" href="#Giaovien" role="button"
+                        aria-expanded="false" aria-controls="Giaovien">
+                        3. Giáo viên
+                    </a>
+                    <a class="btn btn-danger ml-4 mb-2 text-left" data-toggle="collapse" href="#header"
+                        role="button" aria-expanded="false" aria-c2ntrols="header">
+                        4. Header
+                    </a>
+                    <a class="btn btn-danger ml-4 mb-2 text-left" data-toggle="collapse" href="#section"
+                        role="button" aria-expanded="false" aria-c2ntrols="section">
+                        5. Section
+                    </a>
+                    <a class="btn btn-danger ml-4 mb-2 text-left" data-toggle="collapse" href="#footer"
+                        role="button" aria-expanded="false" aria-c2ntrols="footer">
+                        6. Footer
+                    </a>
+                </p>
+            </div>
+            <div class="col row-cols-1 alert alert-success mt-0">
+                <div class="">
+                    <div class="collapse align-items-end col-md-12" id="aboutMember">
+                        <div class="card card-body">
+                            Lê Quang Vinh - 19503031 - DHKHMT15B <br>
+                            Nguyễn Tuấn Anh - 20 - ...
+                        </div>
+                    </div>
+                    <div class="collapse col-md-12" id="website">
+                        <div class="card card-body">
+                            Website bán điện thoại di động. Ve chung toi <br> vi sao chon chung toi <br>tamaf nhinf vaf suws menh
+                        </div>
+                    </div>
+                    <div class="collapse col-md-12" id="Giaovien">
+                        <div class="card card-body">
+                            Giáo viên Lý Thuyết : Nguyễn Thị Hồng Lương <br>
+                            Giáo viên Lý Thuyết : Đặng Văn Thuận
+                        </div>
+                    </div>
+                    <div class="collapse col-md-12" id="header">
+                        <div class="card card-body">
+                            Lê Quang Vinh - 19503031 - DHKHMT15B
+                        </div>
+                    </div>
+                    <div class="collapse col-md-12" id="section">
+                        <div class="card card-body">
+                            Nguyễn Tuấn Anh - 20 - ...
+                        </div>
+                    </div>
+                    <div class="collapse col-md-12" id="footer">
+                        <div class="card card-body">
+                            Lcasnfckljanckjnka vks dj vkjs ojv ds vo ds <br> kjh bh kj ak wki  <br> ahn kakj <br>aklj bkaaa <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>sas
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+    </section>
+
+    <a href="./TrangChu.html" onclick="topFunction()" id="myBtn" title="Go to top"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+            <path fill-rule="evenodd"
+                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+        </svg>
+    </a>
+    <footer class="container col-sm-12 alert-success" style="font-weight: bold;">
+        <div class="container" style="color: black; font-weight: lighter;">
+            <div class="row text-left">
+                <div class="col btn border-dark mr-1">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">CHĂM SÓC KHÁCH HÀNG</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="" class="alert">1</a></li>
+                        <li class="text-left"><a href="" class="alert">2</a></li>
+                        <li class="text-left"><a href="" class="alert">3</a></li>
+                        <li class="text-left"><a href="" class="alert">4</a></li>
+                    </ul>
+                </div>
+                <div class="col btn border-dark mr-1">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">THANH TOÁN</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="" class="alert">1</a></li>
+                        <li class="text-left"><a href="" class="alert">2</a></li>
+                        <li class="text-left"><a href="" class="alert">3</a></li>
+                        <li class="text-left"><a href="" class="alert">4</a></li>
+                    </ul>
+                </div>
+                <div class="col btn border-dark mr-1">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">NỔI BẬT</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="" class="alert">1</a></li>
+                        <li class="text-left"><a href="" class="alert">2</a></li>
+                        <li class="text-left"><a href="" class="alert">3</a></li>
+                        <li class="text-left"><a href="" class="alert">4</a></li>
+                    </ul>
+                </div>
+                <div class="col btn border-dark mr-1">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">TẤT CẢ ĐIỆN THOẠI</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="" class="alert">1</a></li>
+                        <li class="text-left"><a href="" class="alert">2</a></li>
+                        <li class="text-left"><a href="" class="alert">3</a></li>
+                        <li class="text-left"><a href="" class="alert">4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="alert text-center" style="color: black; font-weight: lighter;">© 2022 - Bản Quyền Thuộc Về Lê Quang Vinh Và Nguyễn Tuấn Anh</p>
+
+    </footer>
+</body>
+
+</html>

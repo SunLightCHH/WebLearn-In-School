@@ -1,0 +1,32 @@
+div{
+    margin-left:10%;
+    border: 1px solid black;
+    width: 980px;
+    height:600px;
+    background-color:rgba(121, 163, 241, 0.856);
+}
+header{
+    height:50px;
+}
+span{
+    margin-left: 15px;
+}
+section{
+    margin-left: 280px;
+}
+article{
+    margin-left:15px;
+    margin-right: 15px;
+    background-color:cornsilk;
+    border: 1px solid black;
+    height:455px;
+}
+nav{
+    width: 280px;
+    border-right: 1px solid black;
+    float:left;
+    flex: 1;
+}
+header, section, nav{
+    border-bottom: 1px solid black;
+}

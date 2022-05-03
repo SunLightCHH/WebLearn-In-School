@@ -1,0 +1,40 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div{
+    margin-left:10%;
+    border: 1px solid black;
+    width: 980px;
+    height:600px;
+    background-color:rgba(243, 203, 71, 0.479);
+}
+header, .menu{
+    text-align:center;
+    height: 50px;
+    width: 100%;
+}
+.h1{
+    width: 780px;
+    border-right: 1px solid black;
+    float:left;
+    flex: 1;
+}
+section{
+    margin-left:200px;
+    border-left: 1px solid;
+    flex: 1;
+}
+header, section, nav, .menu{
+    border-bottom: 1px solid black;
+}
+ul.c1 li{
+    list-style-type: none;
+    display: inline;
+    padding:10px;
+    border: 1px dotted orangered;
+}
+a:link{
+    text-decoration: none;
+}

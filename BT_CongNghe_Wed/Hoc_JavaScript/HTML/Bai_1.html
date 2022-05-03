@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="../css/Bai_1.css">
+    <title>Từ Introduction </title>
+</head>
+<body>
+    <div class="header">
+        <a name="top"></a>
+        <p style="color:rgb(194, 57, 57); font-weight: bold;">Tổng quát nội dung:</p>
+        <ol type="I">
+            <li><a href="#document.getElementById">document.getElementById</a></li>
+        </ol>
+    </div>
+    <a name="document.getElementById"></a>
+    <h3>I. Document.getElementById (Dùng để thay đổi nội dung, style, hình ảnh của 1 phần tử có tên ID nào đó)  </h3>
+    <ol type="1">
+        <li>Thay đổi nội dung của 1 phần tử</li>
+        <p>Thêm đuôi <mark>.innerHTML="Nội dung gì đó"</mark> vào sau phần tử <b>document.getElementById</b> để thay đổi nội dung của 1 phần tử</p>
+        <p id="invalid">Học lập trình để làm gì?</p>
+        <button type="button" onclick='document.getElementById("invalid").innerHTML="Make Sword Art Online"'>Click vào đây để xem đáp án</button>
+        <li>Thay đổi giữa 2 hình ảnh khác nhau</li>
+        <p>Thêm đuôi .src='Đường dẫn đến hình ảnh' vào sau document.getElementById để thay đổi hình ảnh của 1 phần tử có ID nào đó.</p>
+        <button onclick="document.getElementById('Mybul').src='D:\OneDrive - Industrial University of HoChiMinh City\Pictures\Saved Pictures\pic_bulbon.gif'">Turn on the light</button>
+        <img id="Mybul" src="D:\OneDrive - Industrial University of HoChiMinh City\Pictures\Saved Pictures\pic_bulboff.gif">
+        <button onclick="document.getElementById('Mybul').src='D:\OneDrive - Industrial University of HoChiMinh City\Pictures\Saved Pictures\pic_bulboff.gif'">Turn off the light</button>
+    </ol>
+    <a href="#top">Back to top</a>
+</body>
+</html>

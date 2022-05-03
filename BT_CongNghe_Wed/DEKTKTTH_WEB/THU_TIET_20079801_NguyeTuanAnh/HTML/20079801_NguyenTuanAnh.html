@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/20079801_NguyenTuanAnh.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/20079801_NguyenTuanAnh.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="../IMAGE/1.jpg" alt="LogoHeader">
+        <ul id="header-menu" class="menu d-flex" style="list-style: none; justify-content: space-around;">
+            <li class="nav-item">
+                <a class="nav-link" href="#">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item" id="menuDK">
+                <a class="nav-link" href="#" id="myBtn">Đặt vé</a>
+            </li>
+       </ul>
+       <div class="row">
+        <table class="table table-hover table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên khách hàng</th>
+                    <th>Ngày đi</th>
+                    <th>Số điện thoại</th>
+                    <th>Phụ thu hành lý</th>
+                    <th>Hình thức thanh toán</th>
+                </tr>
+            </thead>
+
+            <tbody>
+               
+            </tbody>
+        </table>
+        <div class="col-md-12">
+            <footer class="text-center end">20079801 - Nguyễn Tuấn Anh - DHKHMT16A</footer>
+        </div>
+    </div>
+       <!-- modal -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Đặt vé online</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form action="">
+                        <div class="row form-group">
+                            <label class="col-md-4" for="txtTenKH">Họ tên khách hàng </label>
+                            <div class="col-md-8">
+                                <input type="text" placeholder="Ho ten" id="txtTenKH" required class="form-control">
+                                <span id="errorTenKH" class="text-danger font-italic">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4" for="Date">Ngày đi: </label>
+                            <div class="col-md-8">
+                                <input type="date" id="Date" placeholder="mm/dd/yyyy" required class="form-control">
+                                <span id="errorDate" class="text-danger font-italic">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4" for="txtSDT">Số điện thoại</label>
+                            <div class="col-md-8">
+                                <input type="password" id="txtSDT" placeholder="So dien thoai" required class="form-control">
+                                <span id="errorSDT" class="text-danger font-italic">(*)</span>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4" for="txtKG">Hành lý ký gửi</label>
+                            <div class="col-md-8">
+                                <select type="txt" id="txtKG" readonly value="15kg" required class="form-control">
+                                    <option value="15">15</option>
+                                    <option value="25">25</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4" for="txtPT">Phụ thu hành lý</label>
+                            <div class="col-md-8">
+                                <input type="txt" id="txtPT" readonly value="300000" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-md-4" for="Pay">Phương thức thanh toán</label>
+                            <div class="col-md-8" style="display:flex;">
+                                Chuyển khoản<input type="radio" id="Pay" name="Pay" required class="form-control">
+                                Tiền mặt<input type="radio" id="Pay" name="Pay" required class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <button type="button" id="btnSave" class="btn btn-success" data-dismiss="modal">Đặt vé</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

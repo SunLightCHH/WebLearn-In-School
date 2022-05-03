@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+        <title>Ngày số 3. Bắt đầu từ phần CSS đến phần Link trong W3school.</title>
+        <!--Cách sử dụng CSS internal-->
+        <!--CSS internal là ta sử dụng tag <style> trong phần <head> để-->
+        <!--định dạng cho các phần tử có trong file html-->
+        <!--Thuộc tính margin xác định một lề (khoảng trắng) bên ngoài đường viền.-->
+        <style>
+            body {background-color: aquamarine;}
+            h1 {color:red;
+                font-family:verdana;
+                border: 2px solid crimson;
+                padding: 50px;
+                }
+            p {border: 2px solid teal;
+                margin: 50px
+                }
+            hr {size: 2px; color:grey }
+        </style>
+        <!--<link rel="stylesheet" href="../css/styles.css">-->
+    </head>
+    <body leftmargin="100px">
+    <h1 align="center">
+        Nhớ phải học thêm về JavaScript để làm cái button.
+        Học JavaScript <a href="https://www.w3schools.com/js/default.asp">tại đây</a>
+        <p>Click
+            <a href="https://www.w3schools.com/html/html_css.asp" style="color:rgba(120, 58, 99, 1.0)">tại đây</a>
+            để đến trang CSS trong W3school.
+        </p>
+        <p>Click 
+            <a href="https://www.w3schools.com/html/html_links.asp" style="color:rgba(120, 58, 99, 1.0)">tại đây</a>
+            để đến trang Link trong W3school.
+        </p>
+    </h1>
+    <b style="font-size: 25px; color:rgba(165, 13, 165, 0.932)">CSS là viết tắt của Cascading Style Sheets (phong cách biểu định dải tầng)<br>
+    CSS tiết kiệm được rất nhiều công việc, nó có thể kiểm soát bố cục của nhiều trang web cùng lúc.
+    </b>
+    <hr>
+    <p style="font-size: 20px;">Ta đang sử dụng cách CSS internal<br>
+    Còn 1 cách sử dụng CSS nữa là CSS external.</p>
+    <p style="font-size: 20px; color:blue">CSS external được sử dụng để định kiểu cho nhiều trang web khác nhau<br>
+    Sử dụng tag &ltlink> để liên kết đến file CSS bên ngoài.<br>
+    Để sử dụng cách CSS external trong trang này, hãy bỏ comment của &ltlink> trong phần &lthead> của 
+    trang web đi và cho phần &ltstyle>...&lt/style> thành commemt</p>
+    <ol type="A" style="font-size:20px">
+        <li>
+            <b>HTML Link - thuộc tính mục tiêu</b>
+        </li>
+        <ol>
+            <li>Thông thường, trang liên kết sẽ được hiển thị ngay trong cửa sổ trình duyệt hiện tại. Để thay đổi điều đó, 
+ta phải chỉ định mục tiêu khác cho liên kết<br> Thuộc tính <mark>&lttarget></mark> chỉ định nơi để mở tài liệu liên kết.<br></li>
+            <li>Thuộc tính <mark>&lttarget></mark> có thể có 1 trong các giá trị sau:</li>
+            <ul>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_self</mark>
+                - Mặc định của thuộc tính &lttarget>. Mở tài liệu ở trong 1 cửa sổ/tag khi nó được nhấp vào.
+                </li>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_blank</mark>
+                - Mở tài liệu trong 1 tag mới hoặc của sổ mới.
+                </li>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_parent</mark>
+                - Mở tài liệu trong khung chính.
+                </li>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_top</mark>
+                - Mở tài liệu trong toàn bộ phần thân của cửa sổ.
+                </li>
+            </ul>
+            + Ví dụ:
+            <ul type="circle">
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_self</mark>
+                - Click vào <a href="https://translate.google.com.vn/?sl=auto&tl=en&op=translate" target="_self">đây</a> 
+                để xem cách chạy của _self.
+                </li>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_blank</mark>
+                - Click vào <a href="https://translate.google.com.vn/?sl=auto&tl=en&op=translate" target="_blank">đây</a> 
+                để xem cách chạy của _blank.
+                </li>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_parent</mark>
+                - Click vào <a href="https://translate.google.com.vn/?sl=auto&tl=en&op=translate" target="_parent">đây</a> 
+                để xem cách chạy của _parent.
+                </li>
+                <li><mark style="background-color:rgba(207, 203, 203, 0.623); color:red">_top</mark>
+                - Click vào <a href="https://translate.google.com.vn/?sl=auto&tl=en&op=translate" target="_top">đây</a> 
+                để xem cách chạy của _top.
+                </li>
+            </ul>
+        </ol><!--Hết phần A-->
+        <li><b>Nút dưới dạng liên kết</b></li>
+        <ul type="dot" style="background-color:darkgoldenrod; color:ghostwhite">
+            <li>Để sử dụng nút dưới dạng liên kết trong HTML. Ta phải thêm 1 vài mã JavaScript</li>
+            <li>JavaScript cho phép ta chỉ ra những gì xảy ra tại 1 số sự kiện nhất định, như là 1 lần nhấn nút: </li>
+            <!--Sử dụng tag <button> để tạo ra 1 cái nút-->
+            <button onclick="document.getElementById('demo').innerHTML = Date()">HTML Tutorial</button>
+            <p id="demo"></p>
+            <p>Học thêm về JavaScript <a href="https://www.w3schools.com/js/default.asp">tại đây</a></p>
+        </ul>
+        <!--Hết phần B-->
+        <li><b>Link color</b></li>
+        <ul style="background-color:aquamarine">
+            <li>Ta có thể thay đổi màu, bỏ gạch chân của 1 link bằng cách sử dụng CSS:</li>
+            <pre style="color:darkviolet">Ví dụ:
+<p style="color:red">Chú thích: 
+    + Lệnh <b>text-decoration</b> dùng để thay đổi xem liên kết có gạch chân hay không.
+    + Tại đây, một liên kết chưa được truy cập sẽ có màu xanh lục không có gạch 
+    dưới. 
+    Một liên kết đã truy cập sẽ có màu hồng không có gạch dưới. 
+    Một liên kết đang hoạt động sẽ có màu vàng và 
+    được gạch chân. 
+    Ngoài ra, khi di chuột qua một liên kết (a: hover), nó sẽ chuyển sang màu đỏ
+    và được gạch chân:</p>
+        &ltstyle>
+            a:link {
+                color: green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+                    
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+                    
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+                    
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        &lt/style>
+            </pre>
+        </ul>
+        <!--Hết phần C-->
+        <li><b>Tạo liên kết thành 1 nút</b></li>
+        <p style="color:red">Ta có thể tạo 1 file .css mới hoặc copy đoạn code này vào phần style trong head:</p>
+        <pre style="color:purple">
+            &ltstyle>
+                a:link, a:visited {
+                  background-color: #f44336;
+                  color: white;
+                  padding: 15px 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                }
+                
+                a:hover, a:active {
+                  background-color: red;
+                }
+                &lt/style>
+        </pre>
+    </ol>
+    </body>
+</html>

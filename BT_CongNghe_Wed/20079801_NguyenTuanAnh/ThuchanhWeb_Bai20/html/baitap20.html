@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI TẬP 20</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <!--<link rel="stylesheet" href="../css/myStyle.css">-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!--<script src="../js/main.js"></script>-->
+    <script>
+        let i=0
+        function dangky(){
+            let hoten=document.getElementById("txtHoten").value
+            let errHoten=document.getElementById("errHoten")
+            if(hoten.trim()==""){
+                errHoten.innerHTML="họ tên bắt buộc nhập"
+                return false
+            }
+            errHoten.innerHTML="*"
+            let LOAI= "LT" 
+            let LOAITH=document.getElementById("rdoTH").checked
+            if(LOAITH)
+                LOAI="TH"
+            let MONHOC=document.getElementById("selMH").value
+            let LOP=document.getElementById("selLOP").value
+            let row="<tr><td>"+(++i)+"</td><td>"+hoten+"</td><td>"+MONHOC+"</td><td>"+LOP+"</td><td>"+LOAI+"</td></tr>"
+            let myTable=document.getElementById("tbl")
+            let newrow=myTable.insertRow(myTable.rows.length)
+            newrow.innerHTML=row
+            return true
+
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row"
+            <h1>ĐĂNG KÝ HỌC PHẦN</h1>
+        </div>
+        <form action="">
+            <div class="row" border-bottom m-2 p-2>
+                <label for="txtHoten" class="col-md-4 text-right">Họ Tên:</label>
+                <div class="col-md-8">
+                    <input type="text" id="txtHoten" class="form-control" required>
+                    <span id="errHoten" class="text-danger font-italic">*</span>
+                </div>
+
+            </div>
+            <div class="row" border-bottom m-2 p-2>
+                <label for="selMH" class="col-md-4 text-right">MÔN HỌC</label>
+                <select  id="selMH" class="col-md-8">
+                    <option value="CÔNG NGHỆ WEB">CÔNG NGHỆ WEB</option>
+                    <option value="CÔNG NGHỆ PHẦN MỀM">CÔNG NGHỆ PHẦN MỀM</option>
+                    <option value="LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG">LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG</option>
+                    <option value="HƯỚNG SỰ KIỆN">HƯỚNG SỰ KIỆN</option>
+                    <option value="QUẢN LÝ DỰ ÁN">QUẢN LÝ DỰ ÁN</option>
+                </select>
+            </div>
+            <div class="row" border-bottom m-2 p-2>
+                <label for="selLOP" class="col-md-4 text-right">LỚP HỌC</label>
+                <select  id="selLOP" class="col-md-8">
+                    <option value="ĐHKHMT16A">ĐHKHMT16A</option>
+                    <option value="ĐHKHMT16B">ĐHKHMT16B</option>
+                    <option value="ĐHKHMT16ATT">ĐHKHMT16ATT</option>
+                    <option value="ĐHKTPM16A">ĐHKTPM16A</option>
+                    <option value="ĐHKTPM16ATT">ĐHKTPM16ATT</option>
+                </select>
+            </div>
+            <div class="row" border-bottom m-2 p-2>
+                <label class="col-md-4 text-right">LOẠI:</label>
+                <div class="col-md-8">
+                    <input type="radio" id="rdoLT" name="rdoLOAI" checked>
+                    <label for="rdoLT">LÝ THUYẾT</label>
+                    <input type="radio" id="rdoTH" name="rdoLOAI" class="ml-3">
+                    <label for="rdoTH">THỰC HÀNH</label>
+                </div>
+
+            </div>
+            <div class="row justify-content-center p-2">
+                <button type="button" class="btn-btn-danger" onclick="dangky()">ĐĂNG KÝ</button>
+                <button type="reset" class="btn-btn-info ml-3">HUỶ</button>
+            </div>
+        </form>
+<div class="row">
+    <table class="table table-hover table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>HỌ TÊN</th>
+                <th>MÔN HỌC</th>
+                <th>LỚP HỌC</th>
+                <th>LOẠI</th>
+            </tr>
+        </thead>
+        <tbody id="tbl">
+            
+        </tbody>
+    </table>
+
+</div>
+    </div>
+</body>
+</html>

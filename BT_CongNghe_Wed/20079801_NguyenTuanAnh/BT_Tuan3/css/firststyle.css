@@ -1,0 +1,108 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: thin #000099 dashed}
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 9px; font-style: italic; 
+    color: #CC0000; 
+    text-decoration: blink}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; font-style: normal;
+    font-weight: bold; 
+    color: #FF3399}
+h4 {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 16px; 
+    font-style: italic;
+    color: #FFFF00}
+h5 {
+    font-family: "Courier New", Courier, mono; 
+    font-size: 24px; font-style: italic;
+    color: #009999}
+h6 { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 9px; font-style: normal; 
+    font-weight: lighter; 
+    color: #009900}
+.request{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#divnew{
+    margin-left: 10%;
+    width: 980px;
+    border: 1px solid brown;
+}
+.colorful{
+    text-shadow: 
+    0 6px 2px #85c226,
+	-3px -5px 2px #fe2192,
+	3px -5px 2px #f7c200;
+}
+.doublefont{
+    text-shadow:0px -20px 1.5px #fe2192;
+}
+.inseteffect{
+    background-color:rgb(250, 160, 150);
+    color: purple;
+    text-shadow:
+        1px 1px 2px #fff,
+        2px 1px 2px #fff;
+}
+.glossy{
+	position: relative;
+	font-weight: bold;
+	color:rgb(248, 188, 77);
+}
+.glossy span{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 21;
+    background:url('../Image/glossy.jpg');
+}
+.grunge{
+	position:relative;
+	font-weight: bold;
+	color:red;
+	background: #000;
+}
+.grunge span{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 21;
+    background:url('../Image/grunge.png');
+} 
+.neonText {
+    background-color: black;
+    color: rgb(58, 182, 253);
+    text-shadow:
+    /* White glow */
+        0 0 1px #fff,
+        0 0 3px #fff,
+        0 0 10px #fff,
+    /* rgb(58, 182, 253) glow*/
+        0 0 4px rgb(58, 182, 253),
+        0 0 8px rgb(58, 182, 253),
+        0 0 12px rgb(58, 182, 253),
+        0 0 18px rgb(58, 182, 253),
+        0 0 20px rgb(58, 182, 253);
+}
+.colorful, .inseteffect, .doublefont, .glossy, .grunge, .neonText{
+    font-size:40px;
+    margin-left:8%;
+}

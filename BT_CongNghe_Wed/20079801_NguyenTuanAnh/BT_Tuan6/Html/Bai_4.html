@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 Tuần 6</title>
+</head>
+<body>
+    <script language="JavaScript">
+        var Today =new Date();
+        var ns, thisyear, Tuoi;
+        thisyear = Today.getFullYear();
+        document.write("Năm hiện tại: <B>" + thisyear + "</B><br>")
+        do{
+            ns = prompt("Nhập năm sinh: ","");
+        }while(parseInt(ns)>thisyear || parseInt(ns)<0)
+        Tuoi = thisyear - ns;
+        document.write("Tuổi hiện nay của bạn là: <B>" + Tuoi + " tuổi.</B>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 14</title>
+    <style>
+        * {
+            margin-top: 0px auto;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-left: 10%;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <p>Use the following form to send a message to Example Cafe</p>
+    <table>
+        <form>
+            <tr>
+                <td>Your email</td>
+                <td><input type="email" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250" required
+                        oninvalid="this.setCustomValidity('Please fill out this field.');"></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><textarea name="txtBody" id="emailBody" cols="59" rows="18" tabindex="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>How did you hear of us?</td>
+                <td>
+                    <select name="hearus" id="hearus">
+                        <option>Google</option>
+                        <option>Facebook</option>
+                        <option>Twitter</option>
+                        <option>Instagram</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Newsletter</td>
+                <td><input type="checkbox" name="">Ensure this box is checked if you would like to receive email updates
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Send massage"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

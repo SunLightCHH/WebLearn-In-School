@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17</title>
+    <style>
+        * {
+            border: 0px auto;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #tong {
+            background-color: rgb(252, 200, 105);
+            width: 810px;
+            height: 900px;
+            border: 1px solid black;
+            margin-left: 10%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        ol {
+            margin-left: 5%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../JavaScript/Create_DayMonthYear.js"></script>
+</head>
+
+<body>
+    <p>a:</p>
+    <div id="tong">
+        <h2>Survey Form</h2>
+        <p>If you are interested in purchasing ine of more of our products, before ordering please complete
+            some or all of the follwing survey for our marketing department. Answering any question is
+            optional, and all information will be kept strictly confidential. Thank you very much for your time!
+        </p>
+        <form>
+            <ol type="1">
+                <li><label for="Fullname">What your name?</label></li>
+                <input type="text" size="20" maxlength="30" id="Fullname" name="Fullname" required
+                    oninvalid="this.setCustomValidity('Please fill out this field.')">
+                <!--Ngày tháng năm-->
+                <li><label for="birthday">What is your date of birth?</label></li>
+                Month: <select name="month" id="month" size="1"></select>
+                Date: <select name="day" id="day" size="1">
+                    <option value=" " selected="selected">--Day--</option>
+                </select>
+                Year: <select name="year" id="year" size="1"></select>
+                <!--Mailling Address-->
+                <li><label for="emailBody">What is your mailling address (if you would like to have a hard copy
+                        of out catalog sent to you)?</label></li>
+                <textarea name="txtbody" id="emailBody" cols="50" rows="10"
+                    placeholder="Number/P.O. Box/Route:&#10;Street/Avenue/Road:&#10;City:&#10;State/Zip:"></textarea>
+                <!--Email-->
+                <li><label for="mail">What is your email address?</label></li>
+                <input type="email" name="mail" id="mail" size="20" maxlength="50">
+                <li><label for="V_product catalog">Have you viewed our online product catalog</label></li>
+                <input type="radio" name="choose product catalog" id="V_product catalog">Yes
+                <input type="radio" name="choose product catalog" id="V_product catalog">No
+                <li>
+                    <label for="Checkapply">If so, what product(s), beside the one you are ordering,
+                        might you be intersted in purchasing in the future? (Check all that apply.)
+                    </label>
+                </li>
+                <input type="checkbox" name="VCR" id="Checkapply">VCR<br>
+                <input type="checkbox" name="Big Screen TV" id="Checkapply"> Big Screen TV<br>
+                <input type="checkbox" name="Audio Equipment" id="Checkapply"> Audio Equipment<br>
+                <input type="checkbox" name="Video Equipment" id="Checkapply"> Video Equipment<br>
+                <input type="checkbox" name="Camera Equipment" id="Checkapply"> Camera Equipment<br>
+                <input type="checkbox" name="Other" id="Checkapply"> Other
+                <input type="text" name="otherList" id="otherList" size="20" maxlength="30" placeholder="Please List">
+                <li><label>Do you have any questions, comment or suggestions before proceeding to the Order
+                        Form?</label></li>
+                <textarea name="txtbody" id="emailBody" cols="50" rows="10" placeholder="Your Input:"></textarea>
+                <p style="margin-left:60%">
+                    <input type="submit" value="Send Form">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </ol>
+        </form>
+    </div><br>
+    <p>b:</p>
+    <div style="margin-left: 15%;">
+        <label for="opt">Browser</label>
+        <select name="opt" id="">
+            <option value="">Chrome</option>
+            <option value="">Firefox</option>
+            <option value="">Laban</option>
+        </select>
+        <br><br>
+        <label for="username">UserName</label>
+        <input type="text" name="username" id="username">
+        <br><br>
+        <label for="encryp">Encryption:</label>
+        <select name="encryp" id="encryp">
+            <option value="">2048(High Grade) </option>
+            <option value="">2048(High Grade)</option>
+            <option value="">2048(High Grade)</option>
+        </select>
+        <br>
+        <p>0<input type="range" name="" id="" max="100" min="0" value="50">100</p>
+        <input type="text" name="" id="" placeholder="50">
+        <br><br>
+        <label for="birthday">BirthDay</label>
+        <input type="date" name="birthday" id="">
+        <br><br>
+        <label for="color">Select your favorite color:</label>
+        <input type="color" name="color" value="#ff000">
+        <br><br>
+        <label for="birthday1">Birthday</label>
+        <input type="datetime-local" name="birthday1" id="">
+        <br><br>
+        <label for="brhday2">Select a week</label>
+        <input type="datetime" name="brhday2" id="" value="week">
+        <br><br>
+        <label for="time">Time</label>
+        <input type="time" name="time" id="">
+        <br><br>4
+        <label for="birthday3">BirthDay(Date and time)</label>
+        <input type="datetime" name="birthday3" id="">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="">
+        <br><br>
+        <label for="search">Search Google</label>
+        <input type="search" name="search" id="">
+        <br><br>
+        <label for="tele">Telephone</label>
+        <input type="tel" name="tele" id="">
+        <br><br>
+        <label for="homepage">Add your homepage</label>
+        <input type="text" name="homepage" id="">
+        <br><br>
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>
