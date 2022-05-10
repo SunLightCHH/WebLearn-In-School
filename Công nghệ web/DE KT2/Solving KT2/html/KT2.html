@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đoàn thanh niên IUH</title>
+    <link rel="stylesheet" href="../BS4/css/bootstrap.css">
+    <link rel="stylesheet" href="../BS4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BS4/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/KT2.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../BS4/js/bootstrap.js"></script>
+    <script src="../BS4/js/bootstrap.min.js"></script>
+    <script src="../Javascript/KT2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="border">
+            <img src="../Image/logo.PNG" alt="Logo-IUH">
+            <div class="float-md-right mx-4 text-center mt-3">
+                <h4>Đoàn thanh niên thành phố Hồ Chí Minh</h3>
+                    <h6>Đoàn thanh niên trường đại học công nghiệp thành phố Hồ Chí Minh</h6>
+            </div>
+            <ul class="nav nav-xl-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ĐOÀN THỂ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SỰ KIỆN</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link">
+                        HOẠT ĐỘNG</a>
+                    <ul class="dropdown-menu">
+                        <li id="DK" data-toggle="modal" data-target="#myModal">
+                            <a class="nav-link" href="#">Đăng ký</a>
+                        </li>
+                        <li><a class="nav-link" href="#">Tham gia</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="text-center">Đăng ký</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-warning" type="button">Mã SV</button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="20079801" id="codeSV"
+                                        aria-label="CodeSV">
+                                    <span class="text-danger" id="ErroCodeSV">*</span>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-warning" type="button">Tên SV</button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Nguyen Tuan Anh" id="Name"
+                                        aria-label="NameSV">
+                                    <span class="text-danger" id="ErroName">*</span>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-warning" type="button">Ngày tham gia</button>
+                                    </div>
+                                    <input type="date" id="JoinDay" class="form-control" aria-label="JoinDay">
+                                    <span class="text-danger" id="ErroDay">*</span>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-warning">Email</button>
+                                    </div>
+                                    <input type="email" id="Email" class="form-control" aria-label="Email">
+                                    <span class="text-danger" id="ErroEmail">*</span>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-outline-warning">Số điện thoại</button>
+                                    </div>
+                                    <input type="text" id="SDT" class="form-control" aria-label="NumPhone" maxlength="12">
+                                    <span class="text-danger" id="ErroSDT">*</span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn border-dark" type="button" id="success">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="row">
+                <img class="rounded-circle col-md-6" src="../Image/ngayhoithanhnien.JPG" alt="Hội thanh niên">
+                <div class="col-md-6 px-5">
+                    <div class="title my-2">
+                        <span>TIN NỔI BẬT</span>
+                    </div>
+                    <ol type="I">
+                        <a href="#">
+                            <li>Mùa hè xanh</li>
+                        </a>
+                        <a href="#">
+                            <li>Thanh niên tình nguyện</li>
+                        </a>
+                        <a href="#">
+                            <li>Tấm lòng vàng</li>
+                        </a>
+                        <a href="#">
+                            <li>Hiến máu nhân đạo</li>
+                        </a>
+                        <a href="#">
+                            <li>Bảo vệ môi trường sạch</li>
+                        </a>
+                        <a href="#">
+                            <li>Thi đua lập thành tích chào mừng ngày 26/3</li>
+                        </a>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="title_rg text-center col-md-12 py-3">
+                    <span>Danh sách đăng ký hoạt động mùa hè xanh</span>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã SV</th>
+                            <th>Tên SV</th>
+                            <th>Ngày tham gia</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <p class="py-3 px-3">@ 2021-2022 Đoàn thanh niên - Trường đại học Công Nghiệp TP.Hồ Chí Minh</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
